@@ -1,0 +1,61 @@
+.hero-section {
+    width: 100%;
+    height: 400px;
+    background: #244144;
+    display: flex;
+}
+.hero-section .text {
+    width: 60%;
+    padding: 70px;
+    color: #e8eef1;
+    /* font-family:'Dongle'; */
+}
+.text h1 {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+.text h1 span {
+    font-family: 700;
+    font-weight: bold;
+}
+.text p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.hero-section .image {
+    background-image: url("../../images/pexels-photo-65438.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+.article {
+    display: flex;
+    padding-top: 50px;
+    color: #244144;
+    position: relative;
+    top: -100px;
+}
+.article .text {
+    width: 60%;
+    font-size: 30px;
+}
+.article .figures {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.figures p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.fig-subtitle span {
+    font-size: 13px;
+    text-align: center;
+}
