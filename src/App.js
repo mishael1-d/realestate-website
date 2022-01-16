@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div>
         <Home />
         {/*<About />
       <Service />

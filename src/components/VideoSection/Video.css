@@ -1,0 +1,36 @@
+.video-section {
+  display: block;
+  width: 100vw !important;
+  background: #244144;
+  height: fit-content;
+}
+.video-section .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  color: #e8eef1;
+  font-weight: 100;
+}
+.heading article {
+  max-width: 500px;
+  line-height: 30px;
+}
+.heading .primary {
+  background: #041618;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}
+.heading h3 {
+  font-size: 2rem;
+}
+.heading p {
+  margin-bottom: 20px;
+}
+.video {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}

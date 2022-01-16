@@ -1,0 +1,35 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.about-image {
+    width: 50%;
+    background-image: url('../../images/pexels-stael-guimarães-3369586.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.about-text {
+    width:40%;
+}
+.about-text h3 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #041618;
+    margin-bottom: 20px;
+}
+.about-text p {
+    margin-bottom: 20px;
+    max-width: 450px;
+    text-align: justify;
+}
+.about-text .primary {
+    background: #041618;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}

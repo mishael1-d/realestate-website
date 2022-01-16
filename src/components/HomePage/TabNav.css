@@ -1,6 +1,6 @@
 .tab-container {
-    position: relative;
-    top: -100px;
+    position: absolute;
+    bottom: 160px;
     margin-left: 70px;
 }
 

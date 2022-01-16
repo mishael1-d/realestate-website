@@ -1,10 +1,13 @@
 import React from "react";
+import About from "../AboutPage/About";
+import Video from "../VideoSection/Video";
 import "./Home.css";
 import TabNav from "./TabNav";
 
 function Home() {
   return (
     <>
+    <div className=" container">
       <section className="hero-section">
         <div className="text">
           <h1>
@@ -36,6 +39,9 @@ function Home() {
           </span>
         </div>
       </article>
+      <About/>
+      </div>
+      <Video/>
     </>
   );
 }
