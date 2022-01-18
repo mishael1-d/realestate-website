@@ -25,12 +25,23 @@
 }
 .heading h3 {
   font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* line-height: 70px; */
+    /* margin-bottom: 20px; */
 }
 .heading p {
   margin-bottom: 20px;
 }
 .video {
-  display: block;
-  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 50px;
+}
+.video-js .vjs-big-play-button {
+  background: #041618 !important;
+  outline: none;
+  border: none;
 }

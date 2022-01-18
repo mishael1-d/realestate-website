@@ -1,48 +1,69 @@
-import React from "react";
-import "./TabNav.css"
-
+import React, { useState } from "react";
+import "./TabNav.css";
+import Data from "../../data.json";
+//function to delete replicated data in object elements
+function getUnique(arr, comp) {
+  const unique = arr
+  //store and copmare the values in array
+  .map((e) => e[comp])
+  //store the keys of the unique objects
+  .map((e, i, final) => final.indexOf(e) === i && i)
+  //eliminate the dead keys and store the unique keys
+  .filter((e) => arr[e])
+  .map((e) => arr[e]);
+  return unique;
+}
+//function to deisplay cities after deleting duplicate data
+const uniqueCity = getUnique(Data, "city")
+//function to deisplay categories after deleting duplicate data
+const uniqueCategory = getUnique(Data, "category")
+//function to prices cities after deleting duplicate data
+const uniquePrice = getUnique(Data, "price")
 
 function TabNav() {
+  const [active, setActive] = useState(true);
+  const changeButtonActive = ()=> {
+    setActive(!active)
+  }
   return (
     <>
       <div className="tab-container">
         <div className="tab-button">
-          <button className="primary">Buy</button>
-          <button className="secondary">Sell</button>
+          <button className= {active ? "primary":"secondary"} onClick={changeButtonActive}>Buy</button>
+          <button className={!active ? "primary":"secondary"} onClick={changeButtonActive}>Rent</button>
         </div>
         <div className="input-field">
           <label htmlFor="location">Location:</label>
           <select name="" id="">
-            <option value="nigeria">Abuja</option>
-            <option value="nigeria">Minna</option>
-            <option value="nigeria">Lagos</option>
-            <option value="nigeria">Ibadan</option>
-            <option value="nigeria">Owerri</option>
-            <option value="nigeria">Sokoto</option>
+            {uniqueCity.map(item => (
+              <option key={item.id} value={item.city}>
+                {item.city}
+              </option>
+            ))}
           </select>
           <label htmlFor="house-type">House Type:</label>
           <select name="" id="">
-            <option value="nigeria">3-bedroom</option>
-            <option value="nigeria">5-bedroom</option>
-            <option value="nigeria">Duplex</option>
-            <option value="nigeria">Bungalow</option>
-            <option value="nigeria">Self-contain</option>
-            <option value="nigeria">2-rooms self contain</option>
+            {uniqueCategory.map(item => (
+              <option key={item.id} value={item.category}>
+                {item.category}
+              </option>
+            ))}
           </select>
           <label htmlFor="price">Price:</label>
           <select name="" id="">
-            <option value="nigeria">$10000</option>
-            <option value="nigeria">$20000</option>
-            <option value="nigeria">$30000</option>
-            <option value="nigeria">$40000</option>
-            <option value="nigeria">$50000</option>
-            <option value="nigeria">$60000</option>
+            {uniquePrice.map(item => (
+              <option key={item.id} value={item.price}>
+                &#8358;{item.price}
+              </option>
+            ))}
           </select>
-          <button type="submit" className="primary">Search</button>
+          <button type="submit" className="primary">
+            Search
+          </button>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default TabNav;

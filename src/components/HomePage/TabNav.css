@@ -52,6 +52,7 @@ select {
     outline: none;
     width: fit-content;
     cursor: pointer;
+    text-align: center;
 }
 option {
     background: #041618;

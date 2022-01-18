@@ -1,0 +1,47 @@
+.contact-wrapper {
+    /* background-color: #244144; */
+    background-image: url('../../images/pexels-stael-guimarães-3369586.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* opacity: .8; */
+}
+.contact-section {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-section h2 {
+    color: #e8eef1;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* line-height: 70px; */
+    margin-bottom: 20px;
+}
+.contact-form {
+    background: #fff;
+    width: 350px;
+    height: 250px;
+    padding: 40px;
+    display: block;
+}
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background: #e8eef1;
+}
+.contact-form button {
+    display: block;
+    margin: 20px auto 0;
+    background: #041618;
+  color: #e8eef1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}

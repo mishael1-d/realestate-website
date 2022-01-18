@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "title": "Brown and Gray Painted House in Front of Road",
+    "category": "3-Bedroom Flat",
+    "city": "Minna",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 6000000,
+    "image": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?cs=srgb&dl=pexels-binyamin-mellish-1396122.jpg&fm=jpg"
+  },
+  {
+    "id": 2,
+    "title": "Modern Building against Sky",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A Duplex apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?cs=srgb&dl=pexels-expect-best-323780.jpg&fm=jpg"
+  },
+  {
+    "id": 3,
+    "title": "Sun Piercing of Brown Concrete House Near Sea",
+    "category": "3-Bedroom Flat",
+    "city": "Kano",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 10000000,
+    "image": "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?cs=srgb&dl=pexels-alex-staudinger-1732414.jpg&fm=jpg"
+  },
+  {
+    "id": 4,
+    "title": "White and Brown Concrete Bungalow Under Clear Blue Sky",
+    "category": "Duplex",
+    "city": "Sokoto",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 6000000,
+    "image": "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?cs=srgb&dl=pexels-pixabay-210617.jpg&fm=jpg"
+  },
+  {
+    "id": 5,
+    "title": "House with Gray Roof",
+    "category": "2-Bedroom Flat",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 9000000,
+    "image": "https://images.pexels.com/photos/5502227/pexels-photo-5502227.jpeg?cs=srgb&dl=pexels-curtis-adams-5502227.jpg&fm=jpg"
+  },
+  {
+    "id": 6,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 7,
+    "title": "Brown and White Wooden House",
+    "category": "2-Bedroom Flat",
+    "city": "Niger",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 5000000,
+    "image": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?cs=srgb&dl=pexels-pixabay-164558.jpg&fm=jpg"
+  },
+  {
+    "id": 8,
+    "title": "Brown and Gray Painted House in Front of Road",
+    "category": "3-Bedroom Flat",
+    "city": "Minna",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 6000000,
+    "image": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?cs=srgb&dl=pexels-binyamin-mellish-1396122.jpg&fm=jpg"
+  },
+  {
+    "id": 9,
+    "title": "Modern Building against Sky",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A Duplex apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?cs=srgb&dl=pexels-expect-best-323780.jpg&fm=jpg"
+  },
+  {
+    "id": 10,
+    "title": "Sun Piercing of Brown Concrete House Near Sea",
+    "category": "Single room",
+    "city": "Kano",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 10000000,
+    "image": "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?cs=srgb&dl=pexels-alex-staudinger-1732414.jpg&fm=jpg"
+  },
+  {
+    "id": 11,
+    "title": "White and Brown Concrete Bungalow Under Clear Blue Sky",
+    "category": "Single room",
+    "city": "Sokoto",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 6000000,
+    "image": "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?cs=srgb&dl=pexels-pixabay-210617.jpg&fm=jpg"
+  },
+  {
+    "id": 12,
+    "title": "House with Gray Roof",
+    "category": "Duplex",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 9000000,
+    "image": "https://images.pexels.com/photos/5502227/pexels-photo-5502227.jpeg?cs=srgb&dl=pexels-curtis-adams-5502227.jpg&fm=jpg"
+  },
+  {
+    "id": 13,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 14,
+    "title": "Brown and White Wooden House",
+    "category": "2-Bedroom Flat",
+    "city": "Niger",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 5000000,
+    "image": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?cs=srgb&dl=pexels-pixabay-164558.jpg&fm=jpg"
+  },
+  {
+    "id": 15,
+    "title": "Brown and Gray Painted House in Front of Road",
+    "category": "Self-contain",
+    "city": "Minna",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 6000000,
+    "image": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?cs=srgb&dl=pexels-binyamin-mellish-1396122.jpg&fm=jpg"
+  },
+  {
+    "id": 16,
+    "title": "Modern Building against Sky",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A Duplex apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?cs=srgb&dl=pexels-expect-best-323780.jpg&fm=jpg"
+  },
+  {
+    "id": 17,
+    "title": "Sun Piercing of Brown Concrete House Near Sea",
+    "category": "3-Bedroom Flat",
+    "city": "Kano",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 10000000,
+    "image": "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?cs=srgb&dl=pexels-alex-staudinger-1732414.jpg&fm=jpg"
+  },
+  {
+    "id": 18,
+    "title": "White and Brown Concrete Bungalow Under Clear Blue Sky",
+    "category": "5-bedroom",
+    "city": "Sokoto",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 6000000,
+    "image": "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?cs=srgb&dl=pexels-pixabay-210617.jpg&fm=jpg"
+  },
+  {
+    "id": 19,
+    "title": "House with Gray Roof",
+    "category": "3-Bedroom Flat",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 9000000,
+    "image": "https://images.pexels.com/photos/5502227/pexels-photo-5502227.jpeg?cs=srgb&dl=pexels-curtis-adams-5502227.jpg&fm=jpg"
+  },
+  {
+    "id": 20,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 21,
+    "title": "Brown and White Wooden House",
+    "category": "2-Bedroom Flat",
+    "city": "Niger",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 5000000,
+    "image": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?cs=srgb&dl=pexels-pixabay-164558.jpg&fm=jpg"
+  }
+]

@@ -1,14 +1,14 @@
 import React from "react";
 import "./Video.css";
 import VideoPlayer from "react-video-js-player";
-import Poster from "../../images/pexels-stael-guimarães-3369586.jpg";
+// import Poster from "../../images/pexels-stael-guimarães-3369586.jpg";
 import Src from "./video.mp4";
 
 function Video() {
   const videoSrc = Src;
-  const poster = Poster;
+  // const poster = Poster;
   return (
-    <secion className="video-section">
+    <section className="video-section">
       <div className="container">
         <article className="heading">
           <h3>Get Inspired</h3>
@@ -25,14 +25,13 @@ function Video() {
         <div className="video">
           <VideoPlayer
             src={videoSrc}
-            poster={poster}
-            width="720"
-            height="420"
+            width="710"
+            height="400"
             controls={true}
           />
         </div>
       </div>
-    </secion>
+    </section>
   );
 }
 
