@@ -22,15 +22,12 @@ const uniquePrice = getUnique(Data, "price")
 
 function TabNav() {
   const [active, setActive] = useState(true);
-  const changeButtonActive = ()=> {
-    setActive(!active)
-  }
   return (
     <>
       <div className="tab-container">
         <div className="tab-button">
-          <button className= {active ? "primary":"secondary"} onClick={changeButtonActive}>Buy</button>
-          <button className={!active ? "primary":"secondary"} onClick={changeButtonActive}>Rent</button>
+          <button className= {active ? "primary":"secondary"} onClick={()=>setActive(true)}>Buy</button>
+          <button className={!active ? "primary":"secondary"} onClick={()=>setActive(false)}>Rent</button>
         </div>
         <div className="input-field">
           <label htmlFor="location">Location:</label>

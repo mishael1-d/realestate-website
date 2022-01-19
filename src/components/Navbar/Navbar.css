@@ -8,7 +8,8 @@
 
 .logo {
     cursor: pointer;
-    color: #244144;
+    color: #244144 !important;
+    text-decoration: none !important;
 }
 .logo:hover {
     color: #6898a7;
@@ -22,6 +23,12 @@
     text-transform: capitalize;
     cursor: pointer;
     color: #244143;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    color: #244143;
+    transition: .3s
 }
 .links:hover {
     color: #6898a7;

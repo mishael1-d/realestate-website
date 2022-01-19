@@ -208,5 +208,95 @@
     "description": "A 3-bedroom apartment for rent well furnished.",
     "price": 5000000,
     "image": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?cs=srgb&dl=pexels-pixabay-164558.jpg&fm=jpg"
+  },
+  {
+    "id": 22,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 23,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 24,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 25,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 26,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 27,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 28,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 29,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
+  },
+  {
+    "id": 30,
+    "title": "Yellow Concrete House",
+    "category": "Duplex",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "description": "A 3-bedroom apartment for rent well furnished.",
+    "price": 4000000,
+    "image": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2102587.jpg&fm=jpg"
   }
 ]

@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.pagination li {
+    list-style: none;
+    margin: 0 10px;
+}
+.pagination button {
+    padding: 5px;
+    border: 1px solid #244144;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background: #244144;
+    color: #fff;
+}
+.pagination .active {
+    background: #244144;
+    color: #fff;   
+}

@@ -1,10 +1,10 @@
 import React from "react";
+import "./Home.css";
 import About from "../AboutPage/About";
 import Video from "../VideoSection/Video";
 import Properties from "../Properties/Properties"
 import Contact from "../ContactPage/Contact"
 import Footer from "../Footer/Footer"
-import "./Home.css";
 import TabNav from "./TabNav";
 
 function Home() {
@@ -48,6 +48,7 @@ function Home() {
       <Properties />
       <Contact />
       <Footer />
+      
     </>
   );
 }

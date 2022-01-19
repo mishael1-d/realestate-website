@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Properties.css";
 import Data from "../../data.json";
+import {Link} from "react-router-dom"
 
 const imgArr = Data.map((img)=> img.image)
 function Properties() {
@@ -15,7 +16,7 @@ function Properties() {
     <div className="properties-wrapper">
       <div className="heading container">
         <h3>Featured Houses</h3>
-        <button className="primary">View all</button>
+        <button className="primary"><Link to="/houses">View all</Link></button>
       </div>
     <div className="property-container container">
       {Data.map((property, index) => {

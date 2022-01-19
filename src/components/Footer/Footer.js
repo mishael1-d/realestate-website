@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="footer-section container">
-        <h3 className="logo">real.estate</h3>
+        <h3 id="logo">real.estate</h3>
         <ul className="nav-links">
           <li className="links">about us</li>
           <li className="links">FAQ</li>
