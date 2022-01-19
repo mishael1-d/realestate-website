@@ -24,8 +24,8 @@ function HousesList() {
         <div className="search-field">
           <label htmlFor="search">Search By</label>
           <select defaultValue="default">
-            <option value="price">price</option>
-            <option value="price">location</option>
+            <option value="price">Price</option>
+            <option value="price">Location</option>
           </select>
           <input type="search" placeholder="Type something" />
           <button type="submit">Search</button>

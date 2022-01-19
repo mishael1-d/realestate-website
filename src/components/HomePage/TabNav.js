@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import "./TabNav.css";
 import Data from "../../data.json";
+
+
+
+//function for the search functionality
+// function search(location, type, price) {}
+
 //function to delete replicated data in object elements
 function getUnique(arr, comp) {
   const unique = arr
@@ -20,8 +26,14 @@ const uniqueCategory = getUnique(Data, "category")
 //function to prices cities after deleting duplicate data
 const uniquePrice = getUnique(Data, "price")
 
+
 function TabNav() {
   const [active, setActive] = useState(true);
+  // const [option, setOption] = useState("")
+  // const onOptionChange= (e)=>{
+  //   e.preventDefault()
+  //   setOption(e.target.value)
+  // }
   return (
     <>
       <div className="tab-container">
