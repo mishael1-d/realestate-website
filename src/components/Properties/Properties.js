@@ -28,7 +28,7 @@ function Properties() {
               <p>{property.description}</p>
               <h4>&#8358;{property.price}</h4>
               <p>{property.city}, {property.country}</p>
-              <button className="primary">Buy Now</button>
+              <Link to={`/houses/${property.id}`} className="primary">Details</Link>
             </div>
           </div>
         );

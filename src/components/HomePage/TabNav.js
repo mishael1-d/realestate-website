@@ -25,6 +25,7 @@ const uniqueCity = getUnique(Data, "city")
 const uniqueCategory = getUnique(Data, "category")
 //function to prices cities after deleting duplicate data
 const uniquePrice = getUnique(Data, "price")
+// console.log(uniqueCity);
 
 
 function TabNav() {

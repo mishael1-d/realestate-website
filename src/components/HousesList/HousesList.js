@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Data from "../../data.json";
 import "./HousesList.css";
 import Pagination from "../Pagination/Pagination";
+import { Link } from "react-router-dom";
 
 function HousesList() {
   const [posts] = useState(Data);
@@ -43,7 +44,7 @@ function HousesList() {
                 <p>
                   {property.city}, {property.country}
                 </p>
-                <button className="primary">Buy Now</button>
+                <Link to={`${property.id}`} className="primary">Details</Link>
               </div>
             </div>
           );
