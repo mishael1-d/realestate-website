@@ -16,7 +16,7 @@ function Properties() {
     <div className="properties-wrapper">
       <div className="heading container">
         <h3>Featured Houses</h3>
-        <button className="primary"><Link to="/houses">View all</Link></button>
+        <Link to="/houses"><button className="primary">View all</button></Link>
       </div>
     <div className="property-container container">
       {Data.map((property, index) => {

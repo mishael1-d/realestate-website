@@ -45,6 +45,7 @@
     cursor: pointer;
     border: none;
     outline: none;
+    margin: 0;
 }
 .action-buttons .primary:hover {
     background: #6898a7;
@@ -53,7 +54,7 @@
     color: #6898a7;
 }
 .action-buttons .secondary {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     text-transform: capitalize;
     cursor: pointer;
     background: #e8eef1;

@@ -16,8 +16,12 @@ function Navbar() {
         <li className="links">contact</li>
       </ul>
       <div className="action-buttons">
-        <button className="secondary">login</button>
-        <button className="primary">SignUp</button>
+      <Link to="/login" className="links secondary">
+          login
+        </Link>
+        <Link to="/register" className="links primary">
+          SignUp
+        </Link>
       </div>
     </div>
   );
