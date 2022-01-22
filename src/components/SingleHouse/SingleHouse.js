@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Data from "../../data.json";
 import "./SingleHouse.css";
 
 function SingleHouse() {
   const { id } = useParams();
-
+  const [house, setHouse] = useState([]);
   // function getUnique(arr, comp) {
   //   const unique = arr
   //     //store and copmare the values in array
@@ -19,8 +19,11 @@ function SingleHouse() {
   // }
   // const uniqueId = getUnique(Data, "id");
   // const propertyId = Array.from(new Set(Data.map((itemId) => itemId.id)));
-  const filterData = Data.filter((item) => item.id === parseInt(id));
-  console.log(filterData);
+  useEffect(() => {
+    const filterData = Data.filter((item) => item.id === parseInt(id));
+    console.log(filterData);
+    setHouse(filterData);
+  }, [id]);
   // console.log(propertyId);
   // console.log(propertyId[0] === id);
   return (
@@ -28,7 +31,7 @@ function SingleHouse() {
       {/* {uniqueId.map((item=> {
 return <h2>{item.title}</h2>
       }))} */}
-      {filterData.map((house) => {
+      {house.map((house) => {
         return (
           <div key={house.id} className="details-section container">
             <div className="image-section">
@@ -40,12 +43,18 @@ return <h2>{item.title}</h2>
             </div>
             <div className="desc-section">
               <h2>{house.title}</h2>
-              <p><span>Type of Apartment:</span> {house.category}</p>
-              <p><span>Description:</span> {house.description}</p>
+              <p>
+                <span>Type of Apartment:</span> {house.category}
+              </p>
+              <p>
+                <span>Description:</span> {house.description}
+              </p>
               <p>
                 <span>Location:</span> {house.city}, {house.country}
               </p>
-              <p><span>Price:</span> &#8358;{house.price}</p>
+              <p>
+                <span>Price:</span> &#8358;{house.price}
+              </p>
               <button className="primary">Buy Now</button>
             </div>
           </div>

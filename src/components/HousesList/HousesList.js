@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Data from "../../data.json";
 import "./HousesList.css";
 import Pagination from "../Pagination/Pagination";
 import { Link } from "react-router-dom";
+import Error from "../ErrorPage/Error"
 
 function HousesList() {
   const [posts] = useState(Data);
@@ -10,6 +11,24 @@ function HousesList() {
   // const [loading, setLoading] = useState(false)
   const [postPerPage] = useState(6);
 
+  const inputRef = useRef('')
+  const handleChange =()=>{
+    const inputValue = inputRef.current.value
+
+    console.log(inputValue);
+  }
+const onSubmit =()=>{
+  // posts.filter((item)=>item.city.toLowerCase() === inputRef.current.value ? <h3>{item.title}</h3>:<Error/>)
+  const filteredHouse = posts.filter((item)=>item.city.toLowerCase() === inputRef.current.value)
+  console.log(filteredHouse);
+  if(filteredHouse > 0) {
+    return ( 
+    <Error/>)
+  }
+  else {
+    return <Error/>
+  }
+}
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirstPost = indexOfLastPost - postPerPage;
   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
@@ -28,8 +47,8 @@ function HousesList() {
             <option value="price">Price</option>
             <option value="price">Location</option>
           </select>
-          <input type="search" placeholder="Type something" />
-          <button type="submit">Search</button>
+          <input type="search" placeholder="Type something" ref={inputRef} onChange={handleChange}/>
+          <button type="submit" onClick={onSubmit}>Search</button>
         </div>
       </div>
       <div className="houses-container container">
