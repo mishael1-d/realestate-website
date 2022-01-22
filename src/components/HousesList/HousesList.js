@@ -1,42 +1,23 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Data from "../../data.json";
 import "./HousesList.css";
 import Pagination from "../Pagination/Pagination";
 import { Link } from "react-router-dom";
-import Error from "../ErrorPage/Error"
+// import Error from "../ErrorPage/Error"
 
 function HousesList() {
   const [posts] = useState(Data);
   const [currentPage, setCurrentPage] = useState(1);
   // const [loading, setLoading] = useState(false)
   const [postPerPage] = useState(6);
+  const [searchTerm, setSearchTerm] = useState('')
 
-  const inputRef = useRef('')
-  const handleChange =()=>{
-    const inputValue = inputRef.current.value
-
-    console.log(inputValue);
-  }
-const onSubmit =()=>{
-  // posts.filter((item)=>item.city.toLowerCase() === inputRef.current.value ? <h3>{item.title}</h3>:<Error/>)
-  const filteredHouse = posts.filter((item)=>item.city.toLowerCase() === inputRef.current.value)
-  console.log(filteredHouse);
-  if(filteredHouse > 0) {
-    return ( 
-    <Error/>)
-  }
-  else {
-    return <Error/>
-  }
-}
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirstPost = indexOfLastPost - postPerPage;
   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-  // if (loading) {
-  //   return <h2>Loading.....</h2>
-  // }
+  
   return (
     <>
       <div className="container house-header">
@@ -47,12 +28,17 @@ const onSubmit =()=>{
             <option value="price">Price</option>
             <option value="price">Location</option>
           </select>
-          <input type="search" placeholder="Type something" ref={inputRef} onChange={handleChange}/>
-          <button type="submit" onClick={onSubmit}>Search</button>
+          <input type="search" placeholder="Type something" onChange={event =>{setSearchTerm(event.target.value)}}/>
         </div>
       </div>
       <div className="houses-container container">
-        {currentPost.map((property, index) => {
+        {currentPost.filter((val)=>{
+          if (searchTerm === "") {
+            return val
+          } else if(val.city.toLowerCase().includes(searchTerm.toLowerCase()) || val.price.toString().includes(searchTerm.toString())) {
+            return val
+          }
+        }).map((property, index) => {
           return (
             <div key={property.id} className="houses-section">
               <img src={property.image} alt={property.title} />
@@ -69,12 +55,15 @@ const onSubmit =()=>{
           );
         })}
       </div>
+      {searchTerm ? <Pagination
+        postPerPage={1}
+      />:
       <Pagination
         postPerPage={postPerPage}
         totalPosts={posts.length}
         paginate={paginate}
         currentPage={currentPage}
-      />
+      />}
     </>
   );
 }
