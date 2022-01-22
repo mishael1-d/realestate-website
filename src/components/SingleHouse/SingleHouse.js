@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Data from "../../data.json";
 import "./SingleHouse.css";
 
@@ -26,6 +26,11 @@ function SingleHouse() {
   }, [id]);
   // console.log(propertyId);
   // console.log(propertyId[0] === id);
+  let navigate = useNavigate()
+  const onSubmit = () => {
+    navigate('../login', {replace:true})
+
+  };
   return (
     <div className="singlehouse-section">
       {/* {uniqueId.map((item=> {
@@ -55,7 +60,7 @@ return <h2>{item.title}</h2>
               <p>
                 <span>Price:</span> &#8358;{house.price}
               </p>
-              <button className="primary">Buy Now</button>
+              <button className="primary" onClick={onSubmit}>Buy Now</button>
             </div>
           </div>
         );
