@@ -216,7 +216,7 @@
     "city": "Lagos",
     "country": "Nigeria",
     "description": "A 3-bedroom apartment for rent well furnished.",
-    "price": 4000000,
+    "price": 6000000,
     "image": "https://images.pexels.com/photos/187815/pexels-photo-187815.jpeg?cs=srgb&dl=pexels-austin-187815.jpg&fm=jpg"
   },
   {
@@ -226,7 +226,7 @@
     "city": "Lagos",
     "country": "Nigeria",
     "description": "A 3-bedroom apartment for rent well furnished.",
-    "price": 4000000,
+    "price": 8000000,
     "image": "https://images.pexels.com/photos/5524165/pexels-photo-5524165.jpeg?cs=srgb&dl=pexels-clayton-bunn-5524165.jpg&fm=jpg"
   },
   {
@@ -253,7 +253,7 @@
     "id": 26,
     "title": "Blue and Gray Wooden House Near Bare Trees",
     "category": "Duplex",
-    "city": "Lagos",
+    "city": "Kano",
     "country": "Nigeria",
     "description": "A 3-bedroom apartment for rent well furnished.",
     "price": 4000000,
@@ -263,7 +263,7 @@
     "id": 27,
     "title": "Beautiful Wooden House",
     "category": "Duplex",
-    "city": "Lagos",
+    "city": "Minna",
     "country": "Nigeria",
     "description": "A 3-bedroom apartment for rent well furnished.",
     "price": 4000000,
@@ -273,7 +273,7 @@
     "id": 28,
     "title": "White Painted House Near Green Leafed Trees",
     "category": "Duplex",
-    "city": "Lagos",
+    "city": "Niger",
     "country": "Nigeria",
     "description": "A 3-bedroom apartment for rent well furnished.",
     "price": 4000000,
@@ -283,7 +283,7 @@
     "id": 29,
     "title": "Beige Painted House Near Green Trees",
     "category": "Duplex",
-    "city": "Lagos",
+    "city": "Sokoto",
     "country": "Nigeria",
     "description": "A 3-bedroom apartment for rent well furnished.",
     "price": 4000000,

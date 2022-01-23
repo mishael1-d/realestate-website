@@ -10,7 +10,7 @@ const Search = () => {
   const price = searchValue.select.price;
   const city = searchValue.select.location;
 
-  console.log(category, price, city);
+  // console.log(category, price, city);
   const posts = Data.filter(
     (post, key) =>
       post.category.toLowerCase() === category.toLowerCase() &&
@@ -18,8 +18,8 @@ const Search = () => {
       post.city.toLowerCase() === city.toLowerCase()
   );
 
-  console.log(posts);
-  console.log(searchValue);
+  // console.log(posts);
+  // console.log(searchValue);
   return (
     <>
       <div className="search-container container">
@@ -36,7 +36,7 @@ const Search = () => {
                   <p>
                     {post.city}, {post.country}
                   </p>
-                  <Link to={`${post.id}`} className="primary">
+                  <Link to={`../houses/${post.id}`} className="primary">
                     Details
                   </Link>
                 </div>

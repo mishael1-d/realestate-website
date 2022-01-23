@@ -46,10 +46,11 @@ function HousesList() {
               return val;
             } else if (
               val.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              val.price.toString().includes(searchTerm.toString())
+              val.price.toString().includes(searchTerm.toString()) ||
+              val.category.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
-              console.log(val);
-              console.log(currentPost);
+              // console.log(val);
+              // console.log(currentPost);
               return val;
             }
           })

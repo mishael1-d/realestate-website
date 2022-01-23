@@ -10,7 +10,7 @@ function TabNav() {
   const onSubmit = () => {
     navigate('../search', {replace:true})
     value.setSelect(value.select)
-    console.log(value.select);
+    // console.log(value.select);
   };
   return (
     <>
