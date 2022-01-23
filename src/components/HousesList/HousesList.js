@@ -3,13 +3,11 @@ import Data from "../../data.json";
 import "./HousesList.css";
 import Pagination from "../Pagination/Pagination";
 import { Link } from "react-router-dom";
-// import Error from "../ErrorPage/Error"
 
 function HousesList() {
   // eslint-disable-next-line
   const [posts, setPosts] = useState(Data);
   const [currentPage, setCurrentPage] = useState(1);
-  // const [loading, setLoading] = useState(false)
   const [postPerPage] = useState(6);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -50,8 +48,6 @@ function HousesList() {
               val.price.toString().includes(searchTerm.toString()) ||
               val.category.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
-              // console.log(val);
-              // console.log(currentPost);
               return val;
             }
           })

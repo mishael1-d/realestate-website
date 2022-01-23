@@ -1,16 +1,14 @@
 import React, { useContext } from "react";
 import "./TabNav.css";
-import {SearchContext} from "../../App"
-import {useNavigate} from "react-router-dom"
+import { SearchContext } from "../../App";
+import { useNavigate } from "react-router-dom";
 
 function TabNav() {
-  
-  const value = useContext(SearchContext)
-  let navigate = useNavigate()
+  const value = useContext(SearchContext);
+  let navigate = useNavigate();
   const onSubmit = () => {
-    navigate('../search', {replace:true})
-    value.setSelect(value.select)
-    // console.log(value.select);
+    navigate("../search", { replace: true });
+    value.setSelect(value.select);
   };
   return (
     <>
@@ -55,7 +53,11 @@ function TabNav() {
             ))}
           </select>
           <label htmlFor="price">Price:</label>
-          <select name="price" value={value.select.price} onChange={value.onSelectChange}>
+          <select
+            name="price"
+            value={value.select.price}
+            onChange={value.onSelectChange}
+          >
             {value.uniquePrice.map((item) => (
               <option key={item.id} value={item.price}>
                 &#8358;{item.price}

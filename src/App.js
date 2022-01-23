@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import "./App.css";
 import { useState } from "react";
 import Home from "./components/HomePage/Home";
@@ -11,8 +11,6 @@ import Error from "./components/ErrorPage/Error";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
 import Data from "./data.json";
-
-
 
 function getUnique(arr, comp) {
   const unique = arr
@@ -31,18 +29,15 @@ const uniqueCity = getUnique(Data, "city");
 const uniqueCategory = getUnique(Data, "category");
 //function to prices cities after deleting duplicate data
 const uniquePrice = getUnique(Data, "price");
-// console.log(uniqueCity);
 
 export const SearchContext = React.createContext();
 function App() {
   const [active, setActive] = useState(true);
-  // const [searchTerm, setSearchTerm] = useState("")
   const [select, setSelect] = useState({
     location: uniqueCity[0].city,
     houseType: uniqueCategory[0].category,
     price: uniquePrice[0].price,
   });
-  // const [search, setSearch] = useState({})
 
   const onSelectChange = (e) => {
     e.preventDefault();
@@ -50,23 +45,17 @@ function App() {
     const value = e.target.value;
     setSelect({ ...select, [name]: value });
   };
- 
-//function for the search functionality
-// function search(location, type, price) {}
 
-//function to delete replicated data in object elements
-
-const state = {
-  active:active,
-setActive:setActive,
-select:select,
-setSelect: setSelect,
-onSelectChange:onSelectChange,
-uniqueCity:uniqueCity,
-uniqueCategory:uniqueCategory,
-uniquePrice:uniquePrice,
-// onSubmit:onSubmit
-}
+  const state = {
+    active: active,
+    setActive: setActive,
+    select: select,
+    setSelect: setSelect,
+    onSelectChange: onSelectChange,
+    uniqueCity: uniqueCity,
+    uniqueCategory: uniqueCategory,
+    uniquePrice: uniquePrice,
+  };
   return (
     <>
       <SearchContext.Provider value={state}>
@@ -76,7 +65,11 @@ uniquePrice:uniquePrice,
             <Route exact path="/" element={<Home />} />
             <Route exact path="/houses" element={<Houses />} />
             <Route exact path="houses/:id" element={<SingleHouse />} />
-            <Route exact path="search" element={<Search searchValue={state.select}/>} />
+            <Route
+              exact
+              path="search"
+              element={<Search searchValue={state.select} />}
+            />
             <Route exact path="login" element={<Login />} />
             <Route exact path="register" element={<Register />} />
             <Route path="*" element={<Error />} />

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css"
+import "./Contact.css";
 
 function Contact() {
   return (
@@ -11,9 +11,11 @@ function Contact() {
           Help you!
         </h2>
         <div className="contact-form">
-            <input type="text" name="name" placeholder="Your Name"/>
-            <input type="email" name="email" placeholder="Email Address" />
-            <button type="submit" className="primary">Send Now</button>
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Email Address" />
+          <button type="submit" className="primary">
+            Send Now
+          </button>
         </div>
       </div>
     </div>

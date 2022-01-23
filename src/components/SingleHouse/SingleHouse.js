@@ -6,36 +6,17 @@ import "./SingleHouse.css";
 function SingleHouse() {
   const { id } = useParams();
   const [house, setHouse] = useState([]);
-  // function getUnique(arr, comp) {
-  //   const unique = arr
-  //     //store and copmare the values in array
-  //     .map((e) => e[comp])
-  //     //store the keys of the unique objects
-  //     .map((e, i, final) => final.indexOf(e) === i && i)
-  //     //eliminate the dead keys and store the unique keys
-  //     .filter((e) => arr[e])
-  //     .map((e) => arr[e]);
-  //   return unique;
-  // }
-  // const uniqueId = getUnique(Data, "id");
-  // const propertyId = Array.from(new Set(Data.map((itemId) => itemId.id)));
   useEffect(() => {
     const filterData = Data.filter((item) => item.id === parseInt(id));
     console.log(filterData);
     setHouse(filterData);
   }, [id]);
-  // console.log(propertyId);
-  // console.log(propertyId[0] === id);
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   const onSubmit = () => {
-    navigate('../login', {replace:true})
-
+    navigate("../login", { replace: true });
   };
   return (
     <div className="singlehouse-section">
-      {/* {uniqueId.map((item=> {
-return <h2>{item.title}</h2>
-      }))} */}
       {house.map((house) => {
         return (
           <div key={house.id} className="details-section container">
@@ -60,7 +41,9 @@ return <h2>{item.title}</h2>
               <p>
                 <span>Price:</span> &#8358;{house.price}
               </p>
-              <button className="primary" onClick={onSubmit}>Buy Now</button>
+              <button className="primary" onClick={onSubmit}>
+                Buy Now
+              </button>
             </div>
           </div>
         );

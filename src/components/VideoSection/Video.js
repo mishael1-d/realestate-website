@@ -1,12 +1,10 @@
 import React from "react";
 import "./Video.css";
 import VideoPlayer from "react-video-js-player";
-// import Poster from "../../images/pexels-stael-guimarães-3369586.jpg";
 import Src from "./video.mp4";
 
 function Video() {
   const videoSrc = Src;
-  // const poster = Poster;
   return (
     <section className="video-section">
       <div className="container">

@@ -9,17 +9,12 @@ const Search = () => {
   const category = searchValue.select.houseType;
   const price = searchValue.select.price;
   const city = searchValue.select.location;
-
-  // console.log(category, price, city);
   const posts = Data.filter(
     (post, key) =>
       post.category.toLowerCase() === category.toLowerCase() &&
       parseInt(post.price) === parseInt(price) &&
       post.city.toLowerCase() === city.toLowerCase()
   );
-
-  // console.log(posts);
-  // console.log(searchValue);
   return (
     <>
       <div className="search-container container">

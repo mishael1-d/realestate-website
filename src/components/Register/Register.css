@@ -1,47 +1,47 @@
 .register {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 35%;
 }
 .register h3 {
-    text-align: left;
-    font-size: 1.5rem;
-    margin-bottom: 2px;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
 }
 .underline {
-    width: 70px;
-    height: 5px;
-    background: #244144;
-    margin-bottom: 20px;
+  width: 70px;
+  height: 5px;
+  background: #244144;
+  margin-bottom: 20px;
 }
 .register input {
-    width: 100%;
-    height: 50px;
-    border: 2px solid #244144;
-    background: none;
-    outline: none;
-    padding: 10px;
-    margin: 10px;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #244144;
+  background: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
 }
 .register button {
-    width: 100%;
-    height: 50px;
-    border: none;
-    background: #244144;
-    color: #fff;
-    outline: none;
-    padding: 10px;
-    margin: 10px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: .875rem;
-    cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #244144;
+  color: #fff;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.875rem;
+  cursor: pointer;
 }
 .register-link {
-    color: #244144;
-    text-decoration: underline;
-    cursor: pointer;
+  color: #244144;
+  text-decoration: underline;
+  cursor: pointer;
 }

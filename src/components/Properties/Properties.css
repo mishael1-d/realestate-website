@@ -1,25 +1,24 @@
 .container {
-    width: 90vw;
-    height: fit-content;
-    margin: 0 auto;
-  }
+  width: 90vw;
+  height: fit-content;
+  margin: 0 auto;
+}
 .property-container {
-    display: flex;
-    margin-top: 50px;
-    overflow: hidden;
+  display: flex;
+  margin-top: 50px;
+  overflow: hidden;
 }
 .property-section {
-    width: 500px;
-    /* height: 300px; */
-    margin-right: 30px;  
-    transition: .5s;  
+  width: 500px;
+  margin-right: 30px;
+  transition: 0.5s;
 }
 .property-section img {
-    width: 350px;
-    height: 300px;
+  width: 350px;
+  height: 300px;
 }
 .property-section .primary {
-    background: #041618;
+  background: #041618;
   color: #e8eef1;
   cursor: pointer;
   border: none;
@@ -27,56 +26,54 @@
   padding: 10px 20px;
 }
 .desc {
-    background: #244144;
-    color: #e8eef1;
-    padding: 20px;
-    height: 200px;
-    margin-top: -5px;
-    /* position: absolute; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  background: #244144;
+  color: #e8eef1;
+  padding: 20px;
+  height: 200px;
+  margin-top: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .desc h1 {
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    /* line-height: 70px; */
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .heading {
-display: flex;
+  display: flex;
   justify-content: space-between;
   padding: 50px 0;
   color: #244144;
   font-weight: 100;
 }
 .left {
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 30px solid #b1b5b8;
-    border-bottom: 15px solid transparent;
-    position: relative;
-    top: -300px;
-    left: 20px;
-    cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 30px solid #b1b5b8;
+  border-bottom: 15px solid transparent;
+  position: relative;
+  top: -300px;
+  left: 20px;
+  cursor: pointer;
 }
 .left:hover {
-    border-right: 30px solid #244144;
+  border-right: 30px solid #244144;
 }
 .right {
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-left: 30px solid #244144;
-    border-bottom: 15px solid transparent;
-    position: relative;
-    top: -300px;
-    right: 20px;
-    margin-left: auto;
-    cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 30px solid #244144;
+  border-bottom: 15px solid transparent;
+  position: relative;
+  top: -300px;
+  right: 20px;
+  margin-left: auto;
+  cursor: pointer;
 }
 .right:hover {
-    border-left: 30px solid #b1b5b8;
+  border-left: 30px solid #b1b5b8;
 }
