@@ -27,7 +27,8 @@ function HousesList() {
           <label htmlFor="search">Search By</label>
           <select defaultValue="default">
             <option value="price">Price</option>
-            <option value="price">Location</option>
+            <option value="location">Location</option>
+            <option value="houseType">House Type</option>
           </select>
           <input
             type="search"

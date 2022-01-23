@@ -11,9 +11,15 @@ function Navbar() {
         <Link to="/" className="links">
           home
         </Link>
-        <li className="links"><a href="#about" className="link">about</a></li>
-        <li className="links">service</li>
-        <li className="links">contact</li>
+        <Link to="../#about" className="links">
+          about
+        </Link>
+        <Link to="../houses" className="links">
+          properties
+        </Link>
+        <Link to="" className="links">
+          contact
+        </Link>
       </ul>
       <div className="action-buttons">
       <Link to="/login" className="links secondary">
