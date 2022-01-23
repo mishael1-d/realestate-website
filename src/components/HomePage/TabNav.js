@@ -1,67 +1,30 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./TabNav.css";
-import Data from "../../data.json";
+import {SearchContext} from "../../App"
 import {useNavigate} from "react-router-dom"
 
-//function for the search functionality
-// function search(location, type, price) {}
-
-//function to delete replicated data in object elements
-function getUnique(arr, comp) {
-  const unique = arr
-    //store and copmare the values in array
-    .map((e) => e[comp])
-    //store the keys of the unique objects
-    .map((e, i, final) => final.indexOf(e) === i && i)
-    //eliminate the dead keys and store the unique keys
-    .filter((e) => arr[e])
-    .map((e) => arr[e]);
-  return unique;
-}
-//function to deisplay cities after deleting duplicate data
-const uniqueCity = getUnique(Data, "city");
-//function to deisplay categories after deleting duplicate data
-const uniqueCategory = getUnique(Data, "category");
-//function to prices cities after deleting duplicate data
-const uniquePrice = getUnique(Data, "price");
-// console.log(uniqueCity);
-
 function TabNav() {
-  const [active, setActive] = useState(true);
-  // const [searchTerm, setSearchTerm] = useState("")
-  const [select, setSelect] = useState({
-    location: uniqueCity[0].city,
-    houseType: uniqueCategory[0].category,
-    price: uniquePrice[0].price,
-  });
-  // const [search, setSearch] = useState({})
-
-  const onSelectChange = (e) => {
-    e.preventDefault();
-    const name = e.target.name;
-    const value = e.target.value;
-    setSelect({ ...select, [name]: value });
-  };
+  
+  const value = useContext(SearchContext)
   let navigate = useNavigate()
   const onSubmit = () => {
     navigate('../search', {replace:true})
-    console.log(select);
-
+    value.setSelect(value.select)
+    console.log(value.select);
   };
-
   return (
     <>
       <div className="tab-container">
         <div className="tab-button">
           <button
-            className={active ? "primary" : "secondary"}
-            onClick={() => setActive(true)}
+            className={value.active ? "primary" : "secondary"}
+            onClick={() => value.setActive(true)}
           >
             Buy
           </button>
           <button
-            className={!active ? "primary" : "secondary"}
-            onClick={() => setActive(false)}
+            className={!value.active ? "primary" : "secondary"}
+            onClick={() => value.setActive(false)}
           >
             Rent
           </button>
@@ -70,10 +33,10 @@ function TabNav() {
           <label htmlFor="location">Location:</label>
           <select
             name="location"
-            value={select.location}
-            onChange={onSelectChange}
+            value={value.select.location}
+            onChange={value.onSelectChange}
           >
-            {uniqueCity.map((item) => (
+            {value.uniqueCity.map((item) => (
               <option key={item.id} value={item.city}>
                 {item.city}
               </option>
@@ -82,18 +45,18 @@ function TabNav() {
           <label htmlFor="house-type">House Type:</label>
           <select
             name="houseType"
-            value={select.houseType}
-            onChange={onSelectChange}
+            value={value.select.houseType}
+            onChange={value.onSelectChange}
           >
-            {uniqueCategory.map((item) => (
+            {value.uniqueCategory.map((item) => (
               <option key={item.id} value={item.category}>
                 {item.category}
               </option>
             ))}
           </select>
           <label htmlFor="price">Price:</label>
-          <select name="price" value={select.price} onChange={onSelectChange}>
-            {uniquePrice.map((item) => (
+          <select name="price" value={value.select.price} onChange={value.onSelectChange}>
+            {value.uniquePrice.map((item) => (
               <option key={item.id} value={item.price}>
                 &#8358;{item.price}
               </option>

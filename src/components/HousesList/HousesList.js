@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 // import Error from "../ErrorPage/Error"
 
 function HousesList() {
-  const [posts] = useState(Data);
+  // eslint-disable-next-line
+  const [posts, setPosts] = useState(Data);
   const [currentPage, setCurrentPage] = useState(1);
   // const [loading, setLoading] = useState(false)
   const [postPerPage] = useState(6);
@@ -39,6 +40,7 @@ function HousesList() {
       </div>
       <div className="houses-container container">
         {currentPost
+          // eslint-disable-next-line
           .filter((val) => {
             if (searchTerm === "") {
               return val;
@@ -46,6 +48,8 @@ function HousesList() {
               val.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
               val.price.toString().includes(searchTerm.toString())
             ) {
+              console.log(val);
+              console.log(currentPost);
               return val;
             }
           })
@@ -68,16 +72,13 @@ function HousesList() {
             );
           })}
       </div>
-      {searchTerm ? (
-        <Pagination postPerPage={1} searchTerm={searchTerm} />
-      ) : (
-        <Pagination
-          postPerPage={postPerPage}
-          totalPosts={posts.length}
-          paginate={paginate}
-          currentPage={currentPage}
-        />
-      )}
+      <Pagination
+        postPerPage={postPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
+      )
     </>
   );
 }
