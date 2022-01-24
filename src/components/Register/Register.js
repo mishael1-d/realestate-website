@@ -13,10 +13,10 @@ const Register = () => {
   const onValueChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    
+
     setUser({ ...user, [name]: value });
   };
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user.name && user.email) {
@@ -27,6 +27,7 @@ const Register = () => {
           const newUser = { ...user, id: new Date().getTime().toString() };
           setPerson({ ...person, newUser });
           localStorage.setItem("userId", newUser.id);
+          localStorage.setItem("name", user.name);
           localStorage.setItem("username", user.email);
           localStorage.setItem("password", user.password);
           setUser({
@@ -36,7 +37,7 @@ const Register = () => {
             confirmPassword: "",
           });
           console.log("Account Created Successfully");
-          navigate("../login", {replace:true})
+          navigate("../login", { replace: true });
         }
       } else {
         console.log("Password does not match");

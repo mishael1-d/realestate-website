@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { SearchContext } from "../../App";
 import Data from "../../data.json";
 import "./SingleHouse.css";
 
 function SingleHouse() {
+  const value = useContext(SearchContext);
   const { id } = useParams();
   const [house, setHouse] = useState([]);
   useEffect(() => {
@@ -13,7 +15,11 @@ function SingleHouse() {
   }, [id]);
   let navigate = useNavigate();
   const onSubmit = () => {
-    navigate("../login", { replace: true });
+    if (value.isLoggedIn) {
+      navigate("../payment", { replace: true });
+    } else {
+      navigate("../login", { replace: true });
+    }
   };
   return (
     <div className="singlehouse-section">

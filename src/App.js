@@ -32,6 +32,7 @@ const uniquePrice = getUnique(Data, "price");
 
 export const SearchContext = React.createContext();
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [active, setActive] = useState(true);
   const [select, setSelect] = useState({
     location: uniqueCity[0].city,
@@ -55,6 +56,8 @@ function App() {
     uniqueCity: uniqueCity,
     uniqueCategory: uniqueCategory,
     uniquePrice: uniquePrice,
+    isLoggedIn:isLoggedIn,
+    setIsLoggedIn:setIsLoggedIn
   };
   return (
     <>
