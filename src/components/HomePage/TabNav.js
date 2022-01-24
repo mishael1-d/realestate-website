@@ -7,7 +7,7 @@ function TabNav() {
   const value = useContext(SearchContext);
   let navigate = useNavigate();
   const onSubmit = () => {
-    navigate("../search", { replace: true });
+    navigate("search", { replace: true });
     value.setSelect(value.select);
   };
   return (

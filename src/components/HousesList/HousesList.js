@@ -16,7 +16,7 @@ function HousesList() {
   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
+  
   return (
     <>
       <div className="container house-header">
