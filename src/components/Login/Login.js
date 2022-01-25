@@ -15,7 +15,7 @@ const Login = () => {
     ) {
       console.log("Login Successful");
       value.setIsLoggedIn(true);
-      navigate("/", { replace: true });
+      navigate(-1);
     } else {
       console.log("Email/Password is incorrect");
     }

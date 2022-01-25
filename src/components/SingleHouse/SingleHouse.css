@@ -69,6 +69,14 @@
   background: #fff;
   /* margin: 20px 0 ; */
 }
+.room img {
+  width: 100%;
+  height: 100%;
+}
+.room p {
+  color:#fff;
+  text-align:center;
+}
 .room1 {
   background: red;
   margin-bottom: auto;

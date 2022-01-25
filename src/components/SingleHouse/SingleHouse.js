@@ -30,8 +30,14 @@ function SingleHouse() {
               <img src={house.image} alt={house.description} />
             </div>
             <div className="rooms">
-              <div className="room room1">Image of kitchen</div>
-              <div className="room romm2">Image of living room</div>
+              <div className="room room1">
+                <img src={house.kitchen} alt="kitchen" />
+                <p>Image of Kitchen</p>
+                </div>
+              <div className="room romm2">
+                <img src={house.livingRoom} alt="living room" />
+                <p>Image of Living Room</p>
+                </div>
             </div>
             <div className="desc-section">
               <h2>{house.title}</h2>
