@@ -28,33 +28,35 @@ const Login = () => {
     setAlert({ show, msg, type });
   };
   return (
-    <div className="login container">
-      {alert.show && <Alert {...alert} removeAlert={showAlert} />}
-      <h3>Login</h3>
-      <div className="underline"></div>
-      <div className="form-container">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit" onClick={handleLogin}>
-          Login
-        </button>
+    <div className="login-container">
+      <div className="login container">
+        {alert.show && <Alert {...alert} removeAlert={showAlert} />}
+        <h3>Login</h3>
+        <div className="underline"></div>
+        <div className="form-container">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit" onClick={handleLogin}>
+            Login
+          </button>
+        </div>
+        <p>
+          Don't have an account?{" "}
+          <Link to="/register" className="register-link">
+            Register
+          </Link>
+        </p>
       </div>
-      <p>
-        Don't have an account?{" "}
-        <Link to="/register" className="register-link">
-          Register
-        </Link>
-      </p>
     </div>
   );
 };

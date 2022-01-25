@@ -1,3 +1,13 @@
+.login-container {
+  margin-top: 0;
+    background: url("../../images/pexels-photo-65438.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+  }
 .login {
   display: flex;
   flex-direction: column;
