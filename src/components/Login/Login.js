@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { SearchContext } from "../../App";
 import { Link, useNavigate } from "react-router-dom";
+import Alert from "../Alert/Alert";
 import "./Login.css";
 
 const Login = () => {
@@ -8,21 +9,27 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const value = useContext(SearchContext);
+  const [alert, setAlert] = useState({ show: false, msg: "", type: "" });
   const handleLogin = () => {
     if (
       localStorage.getItem("username") === email &&
       localStorage.getItem("password") === password
     ) {
-      console.log("Login Successful");
+      showAlert(true, "Login Successful", "success");
+      setTimeout(() => {
+        navigate("../");
+      }, 3000);
       value.setIsLoggedIn(true);
-      navigate(-1);
     } else {
-      console.log("Email/Password is incorrect");
+      showAlert(true, "Email/Password is incorrect", "danger");
     }
   };
-
+  const showAlert = (show = false, msg = "", type = "") => {
+    setAlert({ show, msg, type });
+  };
   return (
     <div className="login container">
+      {alert.show && <Alert {...alert} removeAlert={showAlert} />}
       <h3>Login</h3>
       <div className="underline"></div>
       <div className="form-container">

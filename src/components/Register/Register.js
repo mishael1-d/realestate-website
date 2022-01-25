@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Alert from "../Alert/Alert";
 import "./Register.css";
+
 const Register = () => {
   const [user, setUser] = useState({
     name: "",
@@ -9,6 +11,7 @@ const Register = () => {
     confirmPassword: "",
   });
   const [person, setPerson] = useState([]);
+  const [alert, setAlert] = useState({show : false, msg: '', type: ''})
 
   const onValueChange = (e) => {
     const name = e.target.name;
@@ -20,33 +23,46 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user.name && user.email) {
-      if (user.password === user.confirmPassword) {
-        if (localStorage.getItem("username") === user.email) {
-          console.log("User already exists");
+      if (user.password.length === 8) { 
+        if (user.password === user.confirmPassword) {
+          if (localStorage.getItem("username") === user.email) {
+            showAlert(true, "User already exists", "danger")
+          } else {
+            const newUser = { ...user, id: new Date().getTime().toString() };
+            setPerson({ ...person, newUser });
+            localStorage.setItem("userId", newUser.id);
+            localStorage.setItem("name", user.name);
+            localStorage.setItem("username", user.email);
+            localStorage.setItem("password", user.password);
+            setUser({
+              name: "",
+              email: "",
+              password: "",
+              confirmPassword: "",
+            });
+            showAlert(true, "Account Created Successfully", "success")
+            setTimeout(()=>{
+              navigate("../login", { replace: true });
+            }, 3000)
+          }
         } else {
-          const newUser = { ...user, id: new Date().getTime().toString() };
-          setPerson({ ...person, newUser });
-          localStorage.setItem("userId", newUser.id);
-          localStorage.setItem("name", user.name);
-          localStorage.setItem("username", user.email);
-          localStorage.setItem("password", user.password);
-          setUser({
-            name: "",
-            email: "",
-            password: "",
-            confirmPassword: "",
-          });
-          console.log("Account Created Successfully");
-          navigate("../login", { replace: true });
+          showAlert(true, "Password does not match", "danger");
         }
       } else {
-        console.log("Password does not match");
+        showAlert(true, "Password must be 8 characters", "danger");
       }
+    } else {
+      showAlert(true, "Please input a value", "danger")
     }
   };
 
+  const showAlert = (show=false, msg="", type="") => {
+    setAlert({show,msg,type})
+  }
+
   return (
     <div className="register container">
+        {alert.show && <Alert {...alert} removeAlert={showAlert}/>}
       <h3>Register</h3>
       <div className="underline"></div>
       <div className="form-container">

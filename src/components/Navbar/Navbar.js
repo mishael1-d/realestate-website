@@ -39,7 +39,7 @@ function Navbar() {
         {value.isLoggedIn?<button className="links primary" onClick={handleLogout}>
           Log Out
         </button>:
-        <Link to="/login" className="links primary">
+        <Link to="/register" className="links primary">
           SignUp
         </Link>}
       </div>

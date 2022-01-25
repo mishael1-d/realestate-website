@@ -1,0 +1,16 @@
+.alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background: grey;
+    margin: 0 auto 10px;
+    height: 30px;
+    color: #fff;
+}
+.alert-success {
+    background: #244144;
+}
+.alert-danger {
+    background: rgb(138, 12, 12);
+}

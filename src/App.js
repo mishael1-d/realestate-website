@@ -30,6 +30,17 @@ const uniqueCategory = getUnique(Data, "category");
 //function to prices cities after deleting duplicate data
 const uniquePrice = getUnique(Data, "price");
 
+// const initialState = {
+//   name: "",
+//   email: "",
+//   password: "",
+//   confirmPassword: "",
+//   alertMessage: ""
+// }
+// function reducer() {
+
+// }
+
 export const SearchContext = React.createContext();
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -39,6 +50,8 @@ function App() {
     houseType: uniqueCategory[0].category,
     price: uniquePrice[0].price,
   });
+
+  // const [states, dispatch] = useReducer(reducer, initialState)
 
   const onSelectChange = (e) => {
     e.preventDefault();
