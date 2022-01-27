@@ -25,7 +25,7 @@ function Navbar() {
         <Link to="../houses" className="links">
           properties
         </Link>
-        <Link to="" className="links">
+        <Link to="../contact-us" className="links">
           contact
         </Link>
       </ul>

@@ -10,6 +10,7 @@ import Error from "./components/ErrorPage/Error";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
 import Data from "./data.json";
+import ContactPage from "./components/ContactPage/ContactPage";
 
 function getUnique(arr, comp) {
   const unique = arr
@@ -86,6 +87,7 @@ function App() {
               element={<Search searchValue={state.select} />}
             />
             <Route exact path="register" element={<Register />} />
+            <Route exact path="contact-us" element={<ContactPage />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter>

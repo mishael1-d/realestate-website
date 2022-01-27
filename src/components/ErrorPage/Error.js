@@ -17,7 +17,7 @@ function Error() {
           <li>Try again later.</li>
           <li>Check your network connection.</li>
           <li>
-            If you are connected but behind a firewall, check that Firefox has
+            If you are connected but behind a firewall, check that your browser has
             permission to access the Web.
           </li>
         </ul>

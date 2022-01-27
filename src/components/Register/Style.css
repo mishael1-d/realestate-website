@@ -22,15 +22,14 @@
   color: #fff;
   max-width: 400px;
   text-align: center;
-  opacity: .8;
+  opacity: 0.8;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   z-index: 1;
   transition: all ease-in-out 2s;
 }
 .register-container .left-box:hover {
-  background: linear-gradient(#67b4b4,#244144);
-
+  background: linear-gradient(#67b4b4, #244144);
 }
 .register-container .left-box h2 {
   font-size: 30px;
@@ -140,54 +139,151 @@ sup {
   transition: all ease-in-out 3s;
 }
 .login-container .left-box h2 {
-    font-size: 30px;
-    color: #244144;
-    margin-bottom: 40px;
-    text-align: center;
-    transition: ease-in-out 1s;
-  }
-  .login-container .left-box p {
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: center;
-  }
-  .login-container .left-box button {
-    margin: 10px auto;
-    width: 70%;
-    padding: 15px 40px;
-    background: #244144;
-    outline: none;
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .login-container .right-box h2 {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
-  .login-container .right-box button {
-    width: 70%;
-    padding: 15px 40px;
-    background: none;
-    outline: none;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .left-box button:active,
-  .right-box button:active {
-    transform: scale(0.9);
-    transition-duration: 100ms;
-  }
-  .login-container .right-box p {
-    font-size: 18px;
-    font-weight: lighter;
-    margin-bottom: 50px;
-  }
+  font-size: 30px;
+  color: #244144;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: ease-in-out 1s;
+}
+.login-container .left-box p {
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.login-container .left-box button {
+  margin: 10px auto;
+  width: 70%;
+  padding: 15px 40px;
+  background: #244144;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-container .right-box h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.login-container .right-box button {
+  width: 70%;
+  padding: 15px 40px;
+  background: none;
+  outline: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.left-box button:active,
+.right-box button:active {
+  transform: scale(0.9);
+  transition-duration: 100ms;
+}
+.login-container .right-box p {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
 .login-container .right-box:hover {
-  background: linear-gradient(#67b4b4,#244144);
-
+  background: linear-gradient(#67b4b4, #244144);
+}
+/* Conatct page */
+.contact-container .left-box {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(#244144, #242424);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  color: #fff;
+  max-width: 400px;
+  /* text-align: center; */
+  opacity: 0.8;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 1;
+  transition: all ease-in-out 2s;
+}
+.contact-container .left-box:hover {
+  background: linear-gradient(#67b4b4, #244144);
+}
+.contact-container .left-box h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.contact-container .left-box button {
+  width: 70%;
+  padding: 15px 40px;
+  background: none;
+  outline: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-container .left-box button:active,
+.right-box button:active {
+  transform: scale(0.9);
+  transition-duration: 100ms;
+}
+.contact-container .left-box p {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+.banner {
+  background: url("../../images/pexels-stael-guimarães-3369586.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 300px;display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .9;
+}
+.banner h3 {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+.card {
+  padding: 20px;
+  height: 250px;
+  text-align: center;
+  background: #fff;
+  margin: 0 20px;
+}
+.card h4 {
+  font-size: 18px;
+  margin: 20px auto;
+}
+.card p {
+  margin: 20px auto;
+}
+.card a {
+  display: block;
+  margin: 20px;
+  color: #244144;
+}
+.card button {
+  background: #244144;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
 }
