@@ -1,11 +1,32 @@
-import React from 'react'
-
+import React from "react";
+import "./Error.css";
+import { useNavigate } from "react-router-dom";
 function Error() {
-    return (
-        <div>
-            <p>Error 404: Page Does not exist</p>
-        </div>
-    )
+  let navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
+  return (
+    <div className="error-container container">
+      <div className="error">
+        <p>Hmmm. We're having trouble finding this site. </p>
+        <h4>
+          If that address is correct, here are three other things you can try:
+        </h4>
+        <ul>
+          <li>Try again later.</li>
+          <li>Check your network connection.</li>
+          <li>
+            If you are connected but behind a firewall, check that Firefox has
+            permission to access the Web.
+          </li>
+        </ul>
+        <button className="primary" onClick={goBack}>
+          Go Back
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default Error
+export default Error;

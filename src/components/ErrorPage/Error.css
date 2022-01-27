@@ -1,0 +1,37 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.error p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 10px;
+}
+.error h4 {
+margin: 10px;
+}
+.error ul {
+    padding-left: 20px;
+}
+
+.error .primary {
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-top: 20px;
+    background: #244144;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
