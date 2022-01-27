@@ -14,7 +14,7 @@
 .register-container .left-box {
   width: 40%;
   height: 100%;
-  background: #244144;
+  background: linear-gradient(#244144, #242424);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,15 @@
   color: #fff;
   max-width: 400px;
   text-align: center;
-  opacity: 0.9;
+  opacity: .8;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   z-index: 1;
+  transition: all ease-in-out 2s;
+}
+.register-container .left-box:hover {
+  background: linear-gradient(#67b4b4,#244144);
+
 }
 .register-container .left-box h2 {
   font-size: 30px;
@@ -61,6 +66,7 @@
   align-items: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: ease-in-out 1s;
 }
 .register-container .right-box h2 {
   font-size: 30px;
@@ -115,10 +121,11 @@ sup {
   align-items: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  transition: ease-in-out 1s;
 }
 .login-container .right-box {
   width: 40%;
-  background: #244144;
+  background: linear-gradient(#244144, #2e4444);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,16 +133,18 @@ sup {
   color: #fff;
   max-width: 400px;
   text-align: center;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: 1;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: all ease-in-out 3s;
 }
 .login-container .left-box h2 {
     font-size: 30px;
     color: #244144;
     margin-bottom: 40px;
     text-align: center;
+    transition: ease-in-out 1s;
   }
   .login-container .left-box p {
     margin: 20px 0;
@@ -178,3 +187,7 @@ sup {
     font-weight: lighter;
     margin-bottom: 50px;
   }
+.login-container .right-box:hover {
+  background: linear-gradient(#67b4b4,#244144);
+
+}

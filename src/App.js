@@ -6,7 +6,6 @@ import Houses from "./components/HousesList/HousesList";
 import Navbar from "./components/Navbar/Navbar";
 import SingleHouse from "./components/SingleHouse/SingleHouse";
 import Search from "./components/Search/Search";
-import Login from "./components/Login/Login";
 import Error from "./components/ErrorPage/Error";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
@@ -86,7 +85,6 @@ function App() {
               path="search"
               element={<Search searchValue={state.select} />}
             />
-            <Route exact path="login" element={<Login />} />
             <Route exact path="register" element={<Register />} />
             <Route path="*" element={<Error />} />
           </Routes>
