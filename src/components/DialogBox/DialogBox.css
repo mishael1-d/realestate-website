@@ -1,0 +1,11 @@
+.dailog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #244144;
+    color: #fff;
+    width: 300px;
+    text-align: center;
+}

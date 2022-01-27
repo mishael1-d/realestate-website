@@ -1,0 +1,180 @@
+.account-container {
+  display: flex;
+  height: 87vh;
+  width: 78%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: url("../../images/pexels-stael-guimarães-3369586.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: ease-in-out 2s;
+}
+.register-container .left-box {
+  width: 40%;
+  height: 100%;
+  background: #244144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  max-width: 400px;
+  text-align: center;
+  opacity: 0.9;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 1;
+}
+.register-container .left-box h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.register-container .left-box button {
+  width: 70%;
+  padding: 15px 40px;
+  background: none;
+  outline: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.register-container .left-box button:active,
+.right-box button:active {
+  transform: scale(0.9);
+  transition-duration: 100ms;
+}
+.register-container .left-box p {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+.register-container .right-box {
+  width: 70%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.register-container .right-box h2 {
+  font-size: 30px;
+  color: #244144;
+  margin-bottom: 40px;
+}
+.register-container .right-box p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-container input {
+  width: 400px;
+  margin-bottom: 10px;
+  height: 50px;
+  padding: 10px 20px;
+  background: #e9ecec;
+  border: none;
+  outline: none;
+}
+.register-container .right-box button {
+  margin: 10px auto;
+  width: 70%;
+  padding: 15px 40px;
+  background: #244144;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.left-box input::placeholder,
+.right-box input::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+sup {
+  color: red;
+}
+
+/* Login */
+.login-container .left-box {
+  width: 70%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.login-container .right-box {
+  width: 40%;
+  background: #244144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  max-width: 400px;
+  text-align: center;
+  opacity: 0.9;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.login-container .left-box h2 {
+    font-size: 30px;
+    color: #244144;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .login-container .left-box p {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .login-container .left-box button {
+    margin: 10px auto;
+    width: 70%;
+    padding: 15px 40px;
+    background: #244144;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .login-container .right-box h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .login-container .right-box button {
+    width: 70%;
+    padding: 15px 40px;
+    background: none;
+    outline: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .left-box button:active,
+  .right-box button:active {
+    transform: scale(0.9);
+    transition-duration: 100ms;
+  }
+  .login-container .right-box p {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+  }

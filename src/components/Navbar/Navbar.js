@@ -33,14 +33,12 @@ function Navbar() {
         {value.isLoggedIn?<Link to="/user"className="links secondary">
           User
         </Link>:
-        <Link to="/login" className="links secondary">
-          login
-        </Link>}
+        undefined}
         {value.isLoggedIn?<button className="links primary" onClick={handleLogout}>
           Log Out
         </button>:
         <Link to="/register" className="links primary">
-          SignUp
+          Join Us
         </Link>}
       </div>
     </div>

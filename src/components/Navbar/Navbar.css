@@ -40,7 +40,7 @@
 }
 .action-buttons .primary {
     background: #244144;
-    padding: 10px 25px;
+    padding: 10px 20px;
     color: #e8eef1;
     cursor: pointer;
     border: none;
@@ -59,7 +59,7 @@
     cursor: pointer;
     background: #e8eef1;
     color: #244143;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border: none;
     outline: none;
 }
