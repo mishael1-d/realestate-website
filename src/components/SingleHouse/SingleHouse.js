@@ -18,7 +18,7 @@ function SingleHouse() {
     if (value.isLoggedIn) {
       navigate("../payment", { replace: true });
     } else {
-      navigate("../login", { replace: true });
+      navigate("../register", { replace: true });
     }
   };
   return (
