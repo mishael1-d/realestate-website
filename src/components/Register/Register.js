@@ -38,6 +38,7 @@ const Register = () => {
         if (user.password === user.confirmPassword) {
           if (localStorage.getItem("username") === user.email) {
             showAlert(true, "User already exists", "danger");
+            
           } else {
             const newUser = { ...user, id: new Date().getTime().toString() };
             setPerson({ ...person, newUser });
@@ -51,8 +52,9 @@ const Register = () => {
               password: "",
               confirmPassword: "",
             });
-            showAlert(true, "Account Created Successfully", "success");
-            setSuccess(true);
+            showAlert(true, "Account Created Successfully", "success");setTimeout(() => {
+              setSuccess(true);
+            }, 2000);
             setTimeout(() => {
               navigate(-1);
             }, 5000);
@@ -63,6 +65,8 @@ const Register = () => {
       } else {
         showAlert(true, "Password must be 8 characters", "danger");
       }
+    } else if (!/\$+@\s+\.\$+/.test(user.email)) {
+      showAlert(true, "Email is invalid", "danger");
     } else {
       showAlert(true, "Please fill in required input field", "danger");
     }
@@ -74,7 +78,9 @@ const Register = () => {
       localStorage.getItem("password") === password
     ) {
       showAlert(true, "Login Successful", "success");
-      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(true);
+      }, 2000);
       setTimeout(() => {
         navigate(-1);
       }, 5000);
@@ -89,46 +95,53 @@ const Register = () => {
 
   return (
     <>
-      {switchPage ? success ? <DialogBox/> :(
-        <div className="account-container login-container container">
-          <div className="left-box">
-            <div className="form-container">
-              {alert.show && <Alert {...alert} removeAlert={showAlert} />}
-              <h2>Sign In to Real.Estate</h2>
+      {switchPage ? (
+        success ? (
+          <DialogBox />
+        ) : (
+          <div className="account-container login-container container">
+            <div className="left-box">
+              <div className="form-container">
+                {alert.show && <Alert {...alert} removeAlert={showAlert} />}
+                <h2>Sign In to Real.Estate</h2>
+                <p>
+                  Fill in the required input<sup>*</sup>{" "}
+                </p>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <p>Forgot your password?</p>
+                <button type="submit" onClick={handleLogin}>
+                  SIGN IN
+                </button>
+              </div>
+            </div>
+            <div className="right-box">
+              <h2>Hello, Friend!</h2>
               <p>
-                Fill in the required input<sup>*</sup>{" "}
+                Enter your personal details <br /> and start your journey with
+                us
               </p>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <p>Forgot your password?</p>
-              <button type="submit" onClick={handleLogin}>
-                SIGN IN
+              <button
+                className="login-text-btn"
+                onClick={() => setSwitchPage(false)}
+              >
+                SIGN UP
               </button>
             </div>
           </div>
-          <div className="right-box">
-            <h2>Hello, Friend!</h2>
-            <p>
-              Enter your personal details <br /> and start your journey with us
-            </p>
-            <button
-              className="login-text-btn"
-              onClick={() => setSwitchPage(false)}
-            >
-              SIGN UP
-            </button>
-          </div>
-        </div>
+        )
       ) : success ? (
         <DialogBox />
       ) : (
@@ -151,6 +164,7 @@ const Register = () => {
               <input
                 type="text"
                 name="name"
+                value={user.name}
                 placeholder="Name"
                 onChange={onValueChange}
                 required
@@ -158,6 +172,7 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
+                value={user.email}
                 placeholder="Email"
                 onChange={onValueChange}
                 required
@@ -165,6 +180,7 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
+                value={user.password}
                 placeholder="Password"
                 onChange={onValueChange}
                 required
@@ -172,6 +188,7 @@ const Register = () => {
               <input
                 type="password"
                 name="confirmPassword"
+                value={user.confirmPassword}
                 placeholder="Confirm Password"
                 onChange={onValueChange}
                 required

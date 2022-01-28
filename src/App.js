@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
 import Data from "./data.json";
 import ContactPage from "./components/ContactPage/ContactPage";
+import Payment from "./components/PaymentPage/Payment";
 
 function getUnique(arr, comp) {
   const unique = arr
@@ -43,7 +44,7 @@ const uniquePrice = getUnique(Data, "price");
 
 export const SearchContext = React.createContext();
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [active, setActive] = useState(true);
   const [select, setSelect] = useState({
     location: uniqueCity[0].city,
@@ -69,8 +70,8 @@ function App() {
     uniqueCity: uniqueCity,
     uniqueCategory: uniqueCategory,
     uniquePrice: uniquePrice,
-    isLoggedIn:isLoggedIn,
-    setIsLoggedIn:setIsLoggedIn
+    isLoggedIn: isLoggedIn,
+    setIsLoggedIn: setIsLoggedIn,
   };
   return (
     <>
@@ -88,6 +89,7 @@ function App() {
             />
             <Route exact path="register" element={<Register />} />
             <Route exact path="contact-us" element={<ContactPage />} />
+            <Route path="payment" element={<Payment />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter>

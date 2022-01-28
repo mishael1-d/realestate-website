@@ -36,12 +36,14 @@ function Contact() {
           <input
             type="text"
             name="name"
+            value={name}
             placeholder="Your Name"
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
             name="email"
+            value={email}
             placeholder="Email Address"
             onChange={(e) => setEmail(e.target.value)}
           />
