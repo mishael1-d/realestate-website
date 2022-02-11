@@ -1,12 +1,12 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { SearchContext } from "../../App";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 function Navbar() {
   const value = useContext(SearchContext);
-  const handleLogout=()=>{
-    value.setIsLoggedIn(false)
-  }
+  // const handleLogout = () => {
+  //   value.setIsLoggedIn(false);
+  // };
   return (
     <div className="navbar">
       <h3>
@@ -30,16 +30,13 @@ function Navbar() {
         </Link>
       </ul>
       <div className="action-buttons">
-        {value.isLoggedIn?<Link to="/user"className="links secondary">
-          User
-        </Link>:
-        undefined}
-        {value.isLoggedIn?<button className="links primary" onClick={handleLogout}>
-          Log Out
-        </button>:
-        <Link to="/register" className="links primary">
-          Join Us
-        </Link>}
+        {value.isLoggedIn ? (
+          <button className="links secondary">User</button>
+        ) : (
+          <Link to="/register" className="links primary">
+            Join Us
+          </Link>
+        )}
       </div>
     </div>
   );

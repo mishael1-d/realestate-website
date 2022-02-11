@@ -10,7 +10,6 @@ function SingleHouse() {
   const [house, setHouse] = useState([]);
   useEffect(() => {
     const filterData = Data.filter((item) => item.id === parseInt(id));
-    console.log(filterData);
     setHouse(filterData);
   }, [id]);
   let navigate = useNavigate();
@@ -63,5 +62,4 @@ function SingleHouse() {
     </div>
   );
 }
-
 export default SingleHouse;
