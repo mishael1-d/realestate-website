@@ -52,12 +52,14 @@ const Register = () => {
               password: "",
               confirmPassword: "",
             });
-            showAlert(true, "Account Created Successfully", "success");setTimeout(() => {
-              setSuccess(true);
-            }, 2000);
-            setTimeout(() => {
-              navigate(-1);
-            }, 5000);
+            showAlert(true, "Account Created Successfully", "success");
+            // setTimeout(() => {
+            //   setSuccess(true);
+            // }, 2000);
+            setSwitchPage(true)
+            // setTimeout(() => {
+            //   navigate(-1);
+            // }, 5000);
           }
         } else {
           showAlert(true, "Password does not match", "danger");
