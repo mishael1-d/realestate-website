@@ -4,7 +4,7 @@ real.estate is a company that provides user with the easy option of buying or re
 
 ## Available Houses
 
-Duplexes
+Duplex
 3-bedroom flat
 2-bedroom flat
 2-storey house
