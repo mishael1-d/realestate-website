@@ -1,61 +1,54 @@
 .tab-container {
-    position: absolute;
-    bottom: 160px;
-    margin-left: 70px;
+  position: relative;
+  top: -100px;
+  margin-left: 70px;
 }
-
 
 .input-field {
-    background: #f1f1f1;
-    color: #244144;
-    opacity: .7;
-    width: fit-content;
-    padding: 20px 30px;
-}
-select {
-    margin-right: 20px;
+  background: #f1f1f1;
+  color: #244144;
+  opacity: 0.8;
+  width: fit-content;
+  padding: 20px 30px;
 }
 .tab-button .primary {
-    background: #041618;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    font-weight: bold;
+  background: #041618;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 .tab-button .secondary {
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    color: #244144;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: #244144;
 }
 .input-field button {
-    background: #041618;
-    color: #f1f1f1;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
+  background: #041618;
+  color: #f1f1f1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
 }
 label {
-margin-right: 10px;
-color: #041618;
+  margin-right: 10px;
+  color: #041618;
 }
 select {
-    background: #041618;
-    color: white;
-    padding: 10px;
-    border: none;
-    outline: none;
-    width: fit-content;
-    cursor: pointer;
-    text-align: center;
+  background: #244143;
+  margin-right: 20px;
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 option {
-    background: #041618;
-    border: none;
-    outline: none;
+  padding: 10px;
 }

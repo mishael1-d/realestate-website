@@ -41,10 +41,9 @@
 }
 .article {
     display: flex;
-    padding: 50px 0;
     color: #244144;
     position: relative;
-    top: 0px;
+    top: -50px;
 }
 .article .text {
     width: 60%;

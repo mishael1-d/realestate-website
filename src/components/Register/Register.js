@@ -53,10 +53,9 @@ const Register = () => {
               confirmPassword: "",
             });
             showAlert(true, "Account Created Successfully", "success");
-            // setTimeout(() => {
-            //   setSuccess(true);
-            // }, 2000);
-            setSwitchPage(true)
+            setTimeout(() => {
+              setSwitchPage(true)
+            }, 2000);
             // setTimeout(() => {
             //   navigate(-1);
             // }, 5000);
@@ -79,6 +78,8 @@ const Register = () => {
       localStorage.getItem("username") === email &&
       localStorage.getItem("password") === password
     ) {
+      setEmail('')
+      setPassword('')
       showAlert(true, "Login Successful", "success");
       setTimeout(() => {
         setSuccess(true);
