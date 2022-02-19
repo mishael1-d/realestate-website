@@ -1,21 +1,18 @@
-# Getting Started with Create React App
+# Real Estate Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+real.estate is a company that provides user with the easy option of buying or renting of apartment across any state in the country.
 
-## Available Scripts
+## Available Houses
 
-In the project directory, you can run:
+Duplexes
+3-bedroom flat
+2-bedroom flat
+2-storey house
+Single house
+Self-contain
+5-bedroom
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-## Colors Used
-
-## Font Used
-    font-family: 'Dongle', sans-serif;
-## Screenshot 
+## Visit Us
+### `Our Website`
+\
+Open [http://real.estate.com](http://real.estate.com) to view it in your browser.
