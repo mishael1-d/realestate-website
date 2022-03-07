@@ -47,7 +47,7 @@ function Navbar() {
           </>    
       ) : (
         <>
-          <Link to="/register" className="links">
+          <Link to="/register" className="links secondary">
             Login
           </Link>
           <Link to="/register" className="links primary">
