@@ -12,7 +12,7 @@ function Navbar() {
     <div className="navbar">
       <h3>
         <Link to="/" className="logo">
-          real.estate{" "}
+          Real.Estate{" "}
         </Link>
       </h3>
 
@@ -20,11 +20,17 @@ function Navbar() {
         <Link to="/" className="links">
           home
         </Link>
-        <Link to="../#about" className="links">
-          about
+        <Link to="" className="links">
+          about Us
         </Link>
-        <Link to="../houses" className="links">
-          properties
+        <Link to="" className="links">
+          buy
+        </Link>
+        <Link to="" className="links">
+          rent
+        </Link>
+        <Link to="." className="links">
+          services
         </Link>
         <Link to="../contact-us" className="links">
           contact
@@ -38,14 +44,16 @@ function Navbar() {
             <button className="links secondary">My Profile</button>
             <button className="links secondary" onClick={handleLogout}>Sign Out</button>
           </div>: undefined}
-          
-          </>
-
-          
-        ) : (
-          <Link to="/register" className="links primary">
-            Join Us
+          </>    
+      ) : (
+        <>
+          <Link to="/register" className="links">
+            Login
           </Link>
+          <Link to="/register" className="links primary">
+            Register
+          </Link>
+          </>
         )}
       </div>
     </div>
