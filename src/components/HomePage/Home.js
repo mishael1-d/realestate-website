@@ -23,7 +23,7 @@ function Home() {
             </div>
           </Slide>
           <Slide right>
-            <image className="image"></image>
+            <div className="image"></div>
           </Slide>
         </section>
         <TabNav />

@@ -12,14 +12,14 @@ function Navbar() {
     <div className="navbar">
       <h3>
         <Link to="/" className="logo">
-          Real.Estate{" "}
+          Real . Estate{" "}
         </Link>
       </h3>
 
       <ul className="nav-links">
         <Link to="/" className="links">
           home
-        </Link>
+        </Link> 
         <Link to="" className="links">
           about Us
         </Link>

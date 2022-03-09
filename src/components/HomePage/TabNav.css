@@ -2,10 +2,11 @@
   position: relative;
   top: -100px;
   margin-left: 70px;
+  
 }
 
 .input-field {
-  background: #f1f1f1;
+  background: #FBFBFB;
   color: #244144;
   opacity: 0.8;
   width: fit-content;
@@ -41,11 +42,20 @@ label {
   color: #041618;
 }
 select {
-  background: #244143;
+  background: #263C41;
   margin-right: 20px;
   color: white;
   padding: 10px;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+option {
+  padding: 10px 14px;
+}
+
+option:hover {
+  background: #fff;
+  color: #041618;
 }
