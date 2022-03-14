@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 .about-image {
   width: 50%;
-  background-image: url("../../images/pexels-stael-guimarães-3369586.jpg");
-  background-position: center;
+  background-image: url("../../images/unsplash_CLKGGwIBTaY.png");
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -15,21 +16,24 @@
   width: 40%;
 }
 .about-text h3 {
-  letter-spacing: 1px;
-  font-size: 1.3rem;
-  color: #041618;
-  margin-bottom: 20px;
+  word-spacing: 1px;
+  font-size: 1.5rem;
+  color: #3A3A3AB2;
+  margin-bottom: 30px;
 }
 .about-text p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   max-width: 450px;
   text-align: justify;
+  color: #5e5b5bb2;
 }
 .about-text .primary {
-  background: #041618;
+  background: #263C41;
+  border-radius: 3px;
   color: #fff;
   cursor: pointer;
   border: none;
   outline: none;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  box-shadow: 0px 8px 12px 0px #009CE214;
 }

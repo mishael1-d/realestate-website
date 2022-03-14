@@ -1,13 +1,21 @@
 .video-section {
   display: block;
   width: 100vw !important;
-  background: #244144;
+  background: #263C41;
   height: fit-content;
+}
+.video-section .container {
+  /* width: 90vw;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 30px 0;
 }
 .video-section .heading {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  align-items: center;
   color: #e8eef1;
   font-weight: 100;
 }
@@ -22,24 +30,46 @@
   border: none;
   outline: none;
   padding: 10px 20px;
+  border-radius: 5px;
 }
 .heading h3 {
   font-size: 2rem;
   font-weight: 100;
   letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 .heading p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .video {
-  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .video-js .vjs-big-play-button {
-  background: #041618 !important;
+  background: rgb(207, 206, 206) !important;
+  opacity: .2;
   outline: none;
   border: none;
+}
+.vjs-poster {
+  background-size:cover !important;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-modal-dialog .vjs-modal-dialog-content {
+  color: red;
+}
+.video-js .vjs-control-bar {
+  display: flex !important;
+}
+.more-videos-video {
+  display: flex;
+  justify-content: space-between;
+}
+.more-videos-heading{
+  color: #fff;
+}
+.more-videos-heading p {
+  margin: 30px;
 }

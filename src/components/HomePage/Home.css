@@ -50,7 +50,19 @@
     width: 60%;
     font-size: 30px;
 }
+
+.text-title {
+    font-size: 15px;
+    margin: 10px 0;
+}
+.text-subtitle {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #555454;
+    margin: 10px 0;
+}
 .article .figures {
+    margin-top: 45px;
     width: 40%;
     display: flex;
     justify-content: space-around;

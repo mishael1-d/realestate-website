@@ -1,40 +1,43 @@
 .tab-container {
   position: relative;
-  top: -100px;
+  top: -130px;
   margin-left: 70px;
   
 }
 
 .input-field {
   background: #FBFBFB;
-  color: #244144;
-  opacity: 0.8;
+  color: #3A3A3A;
   width: fit-content;
-  padding: 20px 30px;
+  padding: 10px 30px;
 }
 .tab-button .primary {
-  background: #041618;
+  background: #263C41;
   color: #fff;
   cursor: pointer;
   border: none;
   outline: none;
   padding: 10px 20px;
   font-weight: bold;
+  transition: ease .5s;
 }
 .tab-button .secondary {
+  background: #fff;
   padding: 10px 20px;
   cursor: pointer;
   border: none;
   outline: none;
   font-weight: bold;
   color: #244144;
+  transition: ease .5s;
 }
 .input-field button {
-  background: #041618;
+  background: #263C41;
   color: #f1f1f1;
   cursor: pointer;
   border: none;
   outline: none;
+  margin-left: 10px;
   padding: 10px 20px;
 }
 label {
@@ -43,16 +46,16 @@ label {
 }
 select {
   background: #263C41;
-  margin-right: 20px;
+  margin-right: 25px;
   color: white;
-  padding: 10px;
+  font-size: 15px;
+  padding: 8px 10px;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-option {
-  padding: 10px 14px;
--webkit-padding: 10px 14px;
-
+option:hover {
+  background: #263C41;
+  color: #3A3A3A;
 }
