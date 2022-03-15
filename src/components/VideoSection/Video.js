@@ -62,7 +62,7 @@ function Video() {
               <div className="video">
                 <VideoPlayer
                   src={Src3}
-                  width="500"
+                  width="300"
                   height="300"
                   controls={true}
                   poster={poster}

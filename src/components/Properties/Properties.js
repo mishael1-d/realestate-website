@@ -15,7 +15,10 @@ function Properties() {
   return (
     <div className="properties-wrapper">
       <div className="heading container">
-        <h3>Featured Houses</h3>
+        <div className="text">
+          <h3>Recently Added Properties</h3>
+          <p>You can also view the details of each property below</p>
+        </div>
         <Link to="/houses">
           <button className="primary">View all</button>
         </Link>
@@ -30,14 +33,14 @@ function Properties() {
             >
               <img src={property.image} alt={property.title} />
               <div className="desc">
-                <h1>{property.title}</h1>
+                {/* <h1>{property.title}</h1> */}
+                <h4>
+                  {property.city}, {property.country}
+                </h4>
                 <p>{property.description}</p>
                 <h4>&#8358;{property.price}</h4>
-                <p>
-                  {property.city}, {property.country}
-                </p>
                 <Link to={`/houses/${property.id}`} className="primary">
-                  Details
+                  View Details
                 </Link>
               </div>
             </div>
