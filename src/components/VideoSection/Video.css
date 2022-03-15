@@ -40,6 +40,7 @@
 }
 .heading p {
   margin-bottom: 30px;
+  max-width: 450px;
 }
 .video {
   display: flex;

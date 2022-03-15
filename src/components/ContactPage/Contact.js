@@ -32,6 +32,7 @@ function Contact() {
           Help you!
         </h2>
         <div className="contact-form">
+          <h2>Your Details</h2>
           {alert.show && <Alert {...alert} removeAlert={showAlert} />}
           <input
             type="text"

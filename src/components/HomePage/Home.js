@@ -7,6 +7,7 @@ import Properties from "../Properties/Properties";
 import Contact from "../ContactPage/Contact";
 import Footer from "../Footer/Footer";
 import TabNav from "./TabNav";
+import Stats from "../StatSection/Stats";
 
 function Home() {
   return (
@@ -73,6 +74,7 @@ function Home() {
       <Slide left>
         <Properties />
       </Slide>
+      <Stats/>
       <Slide right>
         <Contact />
       </Slide>

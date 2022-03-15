@@ -44,7 +44,7 @@ function Video() {
               <div className="video" id="video-player-1647271082351">
                 <VideoPlayer
                   src={Src1}
-                  width="500"
+                  width="350"
                   height="300"
                   controls={true}
                   poster={poster1}
@@ -53,7 +53,7 @@ function Video() {
               <div className="video">
                 <VideoPlayer
                   src={Src2}
-                  width="500"
+                  width="350"
                   height="300"
                   controls={true}
                   poster={poster2}
@@ -62,7 +62,7 @@ function Video() {
               <div className="video">
                 <VideoPlayer
                   src={Src3}
-                  width="300"
+                  width="350"
                   height="300"
                   controls={true}
                   poster={poster}
