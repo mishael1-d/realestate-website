@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-import Home from "./components/HomePage/Home";
+import Home from "./pages/Home";
 import Houses from "./components/HousesList/HousesList";
 import Navbar from "./components/Navbar/Navbar";
 import SingleHouse from "./components/SingleHouse/SingleHouse";
@@ -30,17 +30,6 @@ const uniqueCity = getUnique(Data, "city");
 const uniqueCategory = getUnique(Data, "category");
 //function to prices cities after deleting duplicate data
 const uniquePrice = getUnique(Data, "price");
-
-// const initialState = {
-//   name: "",
-//   email: "",
-//   password: "",
-//   confirmPassword: "",
-//   alertMessage: ""
-// }
-// function reducer() {
-
-// }
 
 export const SearchContext = React.createContext();
 function App() {
