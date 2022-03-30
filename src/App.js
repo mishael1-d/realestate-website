@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-import Home from "./components/HomePage/Home";
+import Home from "./pages/Home";
 import Houses from "./components/HousesList/HousesList";
 import Navbar from "./components/Navbar/Navbar";
 import SingleHouse from "./components/SingleHouse/SingleHouse";
@@ -12,6 +12,7 @@ import Register from "./components/Register/Register";
 import Data from "./data.json";
 import ContactPage from "./components/ContactPage/ContactPage";
 import Payment from "./components/PaymentPage/Payment";
+import About from "./pages/About";
 
 function getUnique(arr, comp) {
   const unique = arr
@@ -30,17 +31,6 @@ const uniqueCity = getUnique(Data, "city");
 const uniqueCategory = getUnique(Data, "category");
 //function to prices cities after deleting duplicate data
 const uniquePrice = getUnique(Data, "price");
-
-// const initialState = {
-//   name: "",
-//   email: "",
-//   password: "",
-//   confirmPassword: "",
-//   alertMessage: ""
-// }
-// function reducer() {
-
-// }
 
 export const SearchContext = React.createContext();
 function App() {
@@ -80,6 +70,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
             <Route exact path="/houses" element={<Houses />} />
             <Route exact path="houses/:id" element={<SingleHouse />} />
             <Route
