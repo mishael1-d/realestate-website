@@ -12,6 +12,7 @@ import Register from "./components/Register/Register";
 import Data from "./data.json";
 import ContactPage from "./components/ContactPage/ContactPage";
 import Payment from "./components/PaymentPage/Payment";
+import About from "./pages/About";
 
 function getUnique(arr, comp) {
   const unique = arr
@@ -69,6 +70,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
             <Route exact path="/houses" element={<Houses />} />
             <Route exact path="houses/:id" element={<SingleHouse />} />
             <Route
