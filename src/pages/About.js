@@ -4,7 +4,7 @@ import Stats from "../components/AboutPage/Stats";
 import Footer from "../components/Footer/Footer";
 import Banner from "../components/HomePage/Banner";
 import TabNav from "../components/HomePage/TabNav";
-import Properties from "../components/Properties/Properties";
+// import Properties from "../components/Properties/Properties";
 
 function About() {
   return (
@@ -14,7 +14,7 @@ function About() {
         <TabNav />
         <AboutUs />
         <Stats />
-        <Properties />
+        {/* <Properties /> */}
       </div>
         <Footer />
     </>
