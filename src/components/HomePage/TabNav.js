@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./TabNav.css";
-import { SearchContext } from "../../App";
+import { AppContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 
 function TabNav() {
-  const value = useContext(SearchContext);
+  const value = useContext(AppContext);
   let navigate = useNavigate();
   const onSubmit = () => {
     navigate("search", { replace: true });

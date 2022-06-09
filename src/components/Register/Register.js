@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { SearchContext } from "../../App";
+import { AppContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 import Alert from "../Alert/Alert";
 import DialogBox from "../DialogBox/DialogBox";
@@ -8,12 +8,13 @@ import "./Style.css";
 const Register = () => {
   //GENERAL STATE
   const [alert, setAlert] = useState({ show: false, msg: "", type: "" });
-  const [switchPage, setSwitchPage] = useState(false);
   const [success, setSuccess] = useState(false);
+
   //LOGIN STATE
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const value = useContext(SearchContext);
+  const { setSwitchPage, setIsLoggedIn, switchPage } = useContext(AppContext);
+
   //REGISTER STATE
   const [user, setUser] = useState({
     name: "",
@@ -22,6 +23,7 @@ const Register = () => {
     confirmPassword: "",
   });
   const [person, setPerson] = useState([]);
+
   //REGISTER FUNCTION
   const onValueChange = (e) => {
     const name = e.target.name;
@@ -30,15 +32,15 @@ const Register = () => {
     setUser({ ...user, [name]: value });
   };
   let navigate = useNavigate();
+
   //REGISTER ONSUBMIT FUNCTION
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user.name && user.email) {
-      if (user.password.length === 8) {
+      if (user.password.length >= 8) {
         if (user.password === user.confirmPassword) {
           if (localStorage.getItem("username") === user.email) {
             showAlert(true, "User already exists", "danger");
-            
           } else {
             const newUser = { ...user, id: new Date().getTime().toString() };
             setPerson({ ...person, newUser });
@@ -54,7 +56,7 @@ const Register = () => {
             });
             showAlert(true, "Account Created Successfully", "success");
             setTimeout(() => {
-              setSwitchPage(true)
+              setSwitchPage(!switchPage);
             }, 2000);
             // setTimeout(() => {
             //   navigate(-1);
@@ -78,8 +80,8 @@ const Register = () => {
       localStorage.getItem("username") === email &&
       localStorage.getItem("password") === password
     ) {
-      setEmail('')
-      setPassword('')
+      setEmail("");
+      setPassword("");
       showAlert(true, "Login Successful", "success");
       setTimeout(() => {
         setSuccess(true);
@@ -87,7 +89,7 @@ const Register = () => {
       setTimeout(() => {
         navigate(-1);
       }, 5000);
-      value.setIsLoggedIn(true);
+      setIsLoggedIn(true);
     } else {
       showAlert(true, "Email/Password is incorrect", "danger");
     }
@@ -138,7 +140,7 @@ const Register = () => {
               </p>
               <button
                 className="login-text-btn"
-                onClick={() => setSwitchPage(false)}
+                onClick={() => setSwitchPage(!switchPage)}
               >
                 SIGN UP
               </button>
@@ -155,7 +157,7 @@ const Register = () => {
               To stay connected with us <br />
               Please login with your personal info
             </p>
-            <button onClick={() => setSwitchPage(true)}>SIGN IN</button>
+            <button onClick={() => setSwitchPage(!switchPage)}>SIGN IN</button>
           </div>
           <div className="right-box">
             {alert.show && <Alert {...alert} removeAlert={showAlert} />}

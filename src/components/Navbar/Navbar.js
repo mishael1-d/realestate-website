@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import { SearchContext } from "../../App";
+import { AppContext } from "../../App";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
-  const value = useContext(SearchContext);
+  const {isLoggedIn, setIsLoggedIn, setSwitchPage, switchPage} = useContext(AppContext);
   const handleLogout = () => {
-    value.setIsLoggedIn(false);
+    setIsLoggedIn(false);
   };
   return (
     <div className="navbar">
@@ -37,7 +37,7 @@ function Navbar() {
         </Link>
       </ul>
       <div className="action-buttons">
-        {value.isLoggedIn ? (
+        {isLoggedIn ? (
           <>
           <button className="links secondary user-btn" onClick={()=>setShowMenu(!showMenu)}>User</button>
           {showMenu ? <div className="dropdown">
@@ -47,10 +47,10 @@ function Navbar() {
           </>    
       ) : (
         <>
-          <Link to="/register" className="links secondary">
+          <Link to="/register" className="links secondary" onClick={()=>setSwitchPage(!switchPage)}>
             Login
           </Link>
-          <Link to="/register" className="links primary">
+          <Link to="/register" className="links primary" onClick={()=>setSwitchPage(!switchPage)}>
             Register
           </Link>
           </>
