@@ -65,6 +65,7 @@ function Register() {
                 </ul>
               ):undefined}
             </div>
+          <button>Register</button>
           </div>
         </div>
         <div className="register-section-image__container">
