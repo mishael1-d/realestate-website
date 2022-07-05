@@ -1,64 +1,134 @@
-.register-container {
-margin-top: 0;
-  background: url("../../images/pexels-stael-guimarães-3369586.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 88vh;
-  display: flex;
-  align-items: center;
+.register-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
 }
-.register {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin: 50px auto; */
-  width: 35%;
+
+
+/* Styling for texxt section */
+.register-section-text__container {
+    width: 40%;
+
 }
-.register h3 {
-  text-align: left;
-  font-size: 1.5rem;
-  margin-bottom: 2px;
+
+.register-header-title {
+    max-width: 80%;
 }
-.underline {
-  width: 70px;
-  height: 5px;
-  background: #244144;
-  margin-bottom: 20px;
+
+.register-header-title h5 {
+    font-size: 1.5rem;
+    color: #3a3a3a;
+    margin-bottom: .5rem;
 }
-.register input {
-  width: 100%;
-  height: 50px;
-  border: 2px solid #244144;
-  font: 1em sans-serif;
-  background: none;
-  outline: none;
-  padding: 10px;
-  margin: 10px;
+
+.register-header-title span {
+    color: #263c41;
 }
-.register input::placeholder{
-  color: #000;
+
+.register-header-title p {
+    font-size: 1rem;
+    color: rgba(38, 60, 65, 0.6);
+    margin-bottom: 2rem;
 }
-.register button {
-  width: 100%;
-  height: 50px;
-  border: none;
-  background: #244144;
-  color: #fff;
-  outline: none;
-  padding: 10px;
-  margin: 10px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 0.875rem;
-  cursor: pointer;
+
+.register-text-nav {
+max-width: 80%;
+margin-bottom: .5rem;
 }
-.register-link {
-  color: #244144;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.forgot {
+.register-text-nav .tab {
+    font-size: 1rem;
+    color: #3a3a3a;
     cursor: pointer;
+}
+.register-text-nav .tab1 {
+    margin-right: 5rem;
+
+}
+.register-section-text__container .divider {
+    width: 40%;
+    height: 2px;
+    background-color: #3a3a3a;
+    margin-bottom: .5rem;
+}
+
+.register-inputFields__container {
+    display: block;
+    max-width: 80%;
+}
+.register-inputFields__container .input__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__container label, .input-dropdown__container p {
+    margin: .5rem 0;
+    color: #333;
+}
+.input__container label sup {
+    margin-left: .3rem;
+    position: relative;
+    top: 5px;
+}
+
+.input__container input {
+    padding: 10px 0;
+    background: none;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid rgba(38, 60, 65, 0.6);
+}
+
+.input-dropdown__container {
+    max-width: 100%;
+}
+
+.dropdown-items__container {
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(196, 196, 196, 0.15);
+}
+
+.dropdown-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(38, 60, 65, 0.6);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-items__container li {
+    color: #3a3a3a;
+    margin-bottom: .5rem;
+    padding: 10px;
+    margin-top: .3rem;
+}
+
+.dropdown-items__container .item-active {
+    background-color: #263c41;
+    color: #fff;
+}
+
+.register-inputFields__container button {
+    margin-top: 3rem;
+    background-color: #263c41;
+    text-align: center;
+    color: #fff;
+    padding: .8rem 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styling for image */
+.register-section-image__container {
+    width: 60%;
+    height: 100vh;
+}
+
+.register-section-image__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

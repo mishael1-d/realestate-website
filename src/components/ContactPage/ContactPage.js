@@ -1,5 +1,5 @@
 import React from "react";
-import "../Register/Style.css";
+import "../OldRegister/Style.css";
 
 function ContactPage() {
   return (
