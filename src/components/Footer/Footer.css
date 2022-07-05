@@ -13,9 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 30px;
   color: #fff !important;
-  padding-bottom: 30px;
+  padding: 30px 70px;
 }
 
 .footer-section .title {

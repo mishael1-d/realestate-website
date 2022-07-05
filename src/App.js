@@ -42,7 +42,7 @@ const uniquePrice = getUnique(Data, "price");
 
 // }
 
-export const SearchContext = React.createContext();
+export const AppContext = React.createContext();
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [active, setActive] = useState(true);
@@ -51,7 +51,7 @@ function App() {
     houseType: uniqueCategory[0].category,
     price: uniquePrice[0].price,
   });
-
+  const [switchPage, setSwitchPage] = useState(false);
   // const [states, dispatch] = useReducer(reducer, initialState)
 
   const onSelectChange = (e) => {
@@ -72,10 +72,12 @@ function App() {
     uniquePrice: uniquePrice,
     isLoggedIn: isLoggedIn,
     setIsLoggedIn: setIsLoggedIn,
+    switchPage:switchPage,
+    setSwitchPage:setSwitchPage
   };
   return (
     <>
-      <SearchContext.Provider value={state}>
+      <AppContext.Provider value={state}>
         <BrowserRouter>
           <Navbar />
           <Routes>
@@ -93,7 +95,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter>
-      </SearchContext.Provider>
+      </AppContext.Provider>
     </>
   );
 }

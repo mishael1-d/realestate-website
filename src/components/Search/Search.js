@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { SearchContext } from "../../App";
+import { AppContext } from "../../App";
 import "./Search.css";
 import Data from "../../data.json";
 import { Link } from "react-router-dom";
 
 const Search = () => {
-  const searchValue = useContext(SearchContext);
+  const searchValue = useContext(AppContext);
   const category = searchValue.select.houseType;
   const price = searchValue.select.price;
   const city = searchValue.select.location;
