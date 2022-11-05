@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import loginBg from "../../images/login-bg.png";
-import icon from "../../images/dp-icon.png";
+// import loginBg from "../../images/login-bg.png";
+// import icon from "../../images/dp-icon.png";
 import "./Register.css";
 
 function Register() {
@@ -52,7 +52,7 @@ function Register() {
               <p>Account Type</p>
               <div className="dropdown-box" onClick={handleShowDropdown}>
                 <div className="box">Individual [Searching for property]</div>
-                <img src={icon} alt="" />
+                {/* <img src={icon} alt="" /> */}
               </div>
               {showDropdown ? (
                 <ul className="dropdown-items__container">
@@ -69,7 +69,7 @@ function Register() {
           </div>
         </div>
         <div className="register-section-image__container">
-          <img src={loginBg} alt="" />
+          {/* <img src={loginBg} alt="" /> */}
         </div>
       </div>
     </div>
