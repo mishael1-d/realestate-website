@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     width: 90vw;
     height: 60px;
     margin: 20px auto;
@@ -38,7 +38,7 @@
 .link{
     text-decoration: none;
     color: #244143;
-    /* transition: .3s */
+    transition: .3s
 }
 .links:hover {
     color: #fff;
@@ -67,7 +67,7 @@
     color: #6898a7;
 }
 .action-buttons .secondary {
-    /* margin-right: 20px; */
+    margin-right: 20px;
     text-transform: capitalize;
     cursor: pointer;
     background: #f1f1f1;
@@ -85,4 +85,4 @@
     top: 60px;
     transition: all ease-in-out .9s;
     z-index: 1000;
-}
+} */

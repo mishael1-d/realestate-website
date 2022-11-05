@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-import Home from "./components/HomePage/Home";
+import Home from ".//pages/Home";
 import Houses from "./components/HousesList/HousesList";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar";
 import SingleHouse from "./components/SingleHouse/SingleHouse";
 import Search from "./components/Search/Search";
 import Error from "./components/ErrorPage/Error";
@@ -81,8 +81,8 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/houses" element={<Houses />} />
+            {/* <Route exact path="/" element={<Home />} /> */}
+            {/* <Route exact path="/houses" element={<Houses />} />
             <Route exact path="houses/:id" element={<SingleHouse />} />
             <Route
               exact
@@ -92,7 +92,7 @@ function App() {
             <Route exact path="register" element={<Register />} />
             <Route exact path="contact-us" element={<ContactPage />} />
             <Route path="payment" element={<Payment />} />
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<Error />} /> */}
           </Routes>
         </BrowserRouter>
       </AppContext.Provider>
